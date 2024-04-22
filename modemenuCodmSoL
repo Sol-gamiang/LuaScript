@@ -121,6 +121,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10.5 CEPanel1.Font.Color = 0x00FFF CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'Magic BulleT                                '
 CEPanel1.Top = 33 CEPanel1.Left = 10 CEPanel1.Height = 40 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 
 local buttonYes1 = createButton(form)
 buttonYes1.Caption = 'ON' buttonYes1.Color = 0x000FFF buttonYes1.Height = 24
@@ -134,6 +135,7 @@ CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FFF
 CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'High JumP                                   '
 CEPanel1.Top = 81 CEPanel1.Left = 10 CEPanel1.Height = 40 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 local buttonYes2 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes2.Caption = 'ON'
 buttonYes2.Height = 24 buttonYes2.Left = 123 buttonYes2.Top = 90 buttonYes2.Width = 48
@@ -143,7 +145,7 @@ buttonNo2.Height = 24 buttonNo2.Left = 175 buttonNo2.Top = 90 buttonNo2.Width = 
 --------------------------------------------------------------------------------------------
 local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10
-CEPanel1.Font.Color = 0x00FFF
+CEPanel1.Font.Color = 0x00FFF  CEPanel1.Color=0x00000
 CEPanel1.Font.Bold = true CEPanel1.Caption = 'Red Line                                     '
 CEPanel1.Top = 129 CEPanel1.Left = 10 CEPanel1.Height = 40 CEPanel1.Width = 220
 local buttonYes3 = createButton(form) -- Create the "ON" button with form as parent
@@ -155,8 +157,9 @@ buttonNo3.Height = 24 buttonNo3.Left = 175 buttonNo3.Top = 138 buttonNo3.Width =
 -------------------------------------------------------
 local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FFF CEPanel1.Font.Bold = true
-CEPanel1.Caption =  'Red LighT                                    '
+CEPanel1.Caption =  'Red LighT                                     '
 CEPanel1.Top = 177 CEPanel1.Left = 10 CEPanel1.Height = 40 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 local buttonYes4 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes4.Caption = 'ON'
 buttonYes4.Height = 24 buttonYes4.Left = 123 buttonYes4.Top = 186 buttonYes4.Width = 48
@@ -166,7 +169,7 @@ buttonNo4.Height = 24 buttonNo4.Left = 175 buttonNo4.Top = 186 buttonNo4.Width =
 ---------------------5------------------------------------
 local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FFF
-CEPanel1.Font.Bold = true
+CEPanel1.Font.Bold = true  CEPanel1.Color=0x00000
 CEPanel1.Caption = 'No Recoile                                 '
 CEPanel1.Top = 225 CEPanel1.Left = 10 CEPanel1.Height = 40 CEPanel1.Width = 220
 local buttonYes5 = createButton(form) -- Create the "ON" button with form as parent
@@ -179,6 +182,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FFF CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'Hip Fire $$                                  '
 CEPanel1.Top = 273 CEPanel1.Left = 10 CEPanel1.Height = 40 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 local buttonYes6 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes6.Caption = 'ON'
 buttonYes6.Height = 24 buttonYes6.Left = 123 buttonYes6.Top = 282 buttonYes6.Width = 48
@@ -190,7 +194,7 @@ local CEPanel001 = createPanel(form) -- Create a new regular panel named CEPanel
 CEPanel001.Font.Size = 10 CEPanel001.Font.Color = 0x00FFF CEPanel001.Font.Bold = true
 CEPanel001.Caption = 'Register UP                                  '
 CEPanel001.Top = 522 CEPanel001.Left = 10 CEPanel001.Height = 40 CEPanel001.Width = 220
-
+CEPanel001.Color=0x00000
 local buttonNo456 = createButton(form) -- Create the "OFF" button with form as parent
 buttonNo456.Caption = 'ON'
 buttonNo456.Height = 24 buttonNo456.Left = 123 buttonNo456.Top = 531 buttonNo456.Width = 48
@@ -203,6 +207,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FFF CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'No Reload                                 '
 CEPanel1.Top = 320 CEPanel1.Left = 10 CEPanel1.Height = 195 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 local buttonOFF16 = createButton(form) -- Create the "OFF" button with form as parent
 buttonOFF16.Caption = 'M4'
 buttonOFF16.Height = 24 buttonOFF16.Left = 123 buttonOFF16.Top = 329 buttonOFF16.Width = 48
@@ -253,6 +258,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FF0 CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'No SmoKe                                   '
 CEPanel1.Top = 33 CEPanel1.Left = 244 CEPanel1.Height = 40 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 local buttonYes7 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes7.Caption = 'ON'
 buttonYes7.Height = 24 buttonYes7.Left = 358 buttonYes7.Top = 42 buttonYes7.Width = 48
@@ -264,6 +270,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FF0 CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'Aim Lock                                     '
 CEPanel1.Top = 81 CEPanel1.Left = 244 CEPanel1.Height = 40 CEPanel1.Width = 220
+CEPanel1.Color=0x00000
 local buttonYes8 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes8.Caption = 'ON'
 buttonYes8.Height = 24 buttonYes8.Left = 358 buttonYes8.Top = 90 buttonYes8.Width = 48
@@ -275,7 +282,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FF0 CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'Long Slide                                   '
 CEPanel1.Top = 129 CEPanel1.Left = 244 CEPanel1.Height = 40 CEPanel1.Width = 220
-
+CEPanel1.Color=0x00000
 local buttonYes9 = createButton(form)
 buttonYes9.Caption = 'ON'
 buttonYes9.Height = 24 buttonYes9.Left = 358 buttonYes9.Top = 138 buttonYes9.Width = 48
@@ -288,7 +295,7 @@ local CEPanel1 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel1.Font.Size = 10 CEPanel1.Font.Color = 0x00FF0 CEPanel1.Font.Bold = true
 CEPanel1.Caption = 'Speed                                         '
 CEPanel1.Top = 177 CEPanel1.Left = 244 CEPanel1.Height = 40 CEPanel1.Width = 220
-
+CEPanel1.Color=0x00000
 local buttonYes10 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes10.Caption = 'X2'
 buttonYes10.Height = 24 buttonYes10.Left = 309 buttonYes10.Top = 186 buttonYes10.Width = 35
@@ -309,7 +316,7 @@ local CEPanel15 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel15.Font.Size = 10 CEPanel15.Font.Color = 0x00FF0 CEPanel15.Font.Bold = true
 CEPanel15.Caption = 'TOPView                                      '
 CEPanel15.Top = 225 CEPanel15.Left = 244 CEPanel15.Height = 40 CEPanel15.Width = 220
-
+CEPanel15.Color=0x00000
 local buttonYes15 = createButton(form) -- Create the "ON" button with form as parent
 buttonYes15.Caption = 'X13'
 buttonYes15.Height = 24 buttonYes15.Left = 310 buttonYes15.Top = 233 buttonYes15.Width = 48
@@ -326,7 +333,7 @@ local CEPanel19 = createPanel(form) -- Create a new regular panel named CEPanel1
 CEPanel19.Font.Size = 10 CEPanel19.Font.Color = 0x00FF0 CEPanel19.Font.Bold = true
 CEPanel19.Caption = 'Skin Character Menu🔥                '
 CEPanel19.Top = 320 CEPanel19.Left = 245 CEPanel19.Height = 40 CEPanel19.Width = 220
-
+CEPanel19.Color=0x00000
 local button19 = createButton(form) -- Create the "OFF" button with form as parent
 button19.Caption = 'MenU'
 button19.Height = 24 button19.Left = 400 button19.Top = 328 button19.Width = 60
@@ -335,7 +342,7 @@ local CEPanel18 = createPanel(form)
 CEPanel18.Font.Size = 10 CEPanel18.Font.Color = 0x00FF0 CEPanel18.Font.Bold = true
 CEPanel18.Caption = 'Skin Gun Menu🔥                       '
 CEPanel18.Top = 274 CEPanel18.Left = 245 CEPanel18.Height = 40 CEPanel18.Width = 220
-
+CEPanel18.Color=0x00000
 local buttonOFF18 = createButton(form)
 buttonOFF18.Caption = 'MenU'
 buttonOFF18.Height = 24 buttonOFF18.Left = 400 buttonOFF18.Top = 282 buttonOFF18.Width = 60
@@ -344,7 +351,7 @@ local CEPanel124 = createPanel(form) -- Create a new regular panel named CEPanel
 CEPanel124.Font.Size = 10  CEPanel124.Font.Bold = true CEPanel124.Font.Color = 0x00FF0
 CEPanel124.Caption = 'Black SKY                                   '
 CEPanel124.Top = 367 CEPanel124.Left = 244 CEPanel124.Height = 40 CEPanel124.Width = 220
-
+CEPanel124.Color=0x00000
 local buttonYe99 = createButton(form)
 buttonYe99.Caption = 'ON'
 buttonYe99.Height = 24 buttonYe99.Left = 358 buttonYe99.Top = 375 buttonYe99.Width = 48
@@ -357,7 +364,7 @@ local CEPanel124 = createPanel(form) -- Create a new regular panel named CEPanel
 CEPanel124.Font.Size = 10  CEPanel124.Font.Bold = true CEPanel124.Font.Color = 0x00FF0
 CEPanel124.Caption = 'Wall BanG                                   '
 CEPanel124.Top = 415 CEPanel124.Left = 244 CEPanel124.Height = 40 CEPanel124.Width = 220
-
+CEPanel124.Color=0x00000
 local buttonYe999 = createButton(form)
 buttonYe999.Caption = 'ON'
 buttonYe999.Height = 24 buttonYe999.Left = 358 buttonYe999.Top = 423 buttonYe999.Width = 48
@@ -370,7 +377,7 @@ local CEPanel224 = createPanel(form) -- Create a new regular panel named CEPanel
 CEPanel224.Font.Size = 10  CEPanel224.Font.Bold = true CEPanel224.Font.Color = 0x0063
 CEPanel224.Caption = 'Wall Hack                                   '
 CEPanel224.Top = 462 CEPanel224.Left = 244 CEPanel224.Height = 40 CEPanel224.Width = 220
-
+CEPanel224.Color=0x00000
 local buttonYe299 = createButton(form)
 buttonYe299.Caption = 'ON'
 buttonYe299.Height = 24 buttonYe299.Left = 358 buttonYe299.Top = 470 buttonYe299.Width = 48
