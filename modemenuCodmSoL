@@ -66,9 +66,51 @@ local temp_path = os.getenv("TEMP") if temp_path then
     end
 end
 ---------------------------------------------------------
-local form = createForm(true)
-form.Caption = '🔥SoL .Gaming.CODM MODE MENU HACK🔥'
-form.Height = 630 form.Width = 475 form.Color = 0x004
+
+if form then
+    form.Destroy()
+    form = nil
+end
+
+DP1 = getScreenDPI() / 96
+form = createForm()
+form.height = 630 * DP1
+form.width = 475 * DP1
+form.left = 400 * DP1
+form.top = 109 * DP1
+form.PopupMode = 0
+form.caption = '🔥SoL .Gaming.CODM MODE MENU HACK🔥'
+form.Position = "poDesktopCenter"
+form.ShowInTaskBar = "stAlways"
+--form.BorderStyle = "bsNone"
+
+local ftbl = {}
+ftbl.backPnl1 = createPanel(form)
+ftbl.backPnl1.AutoSize = false
+ftbl.backPnl1.height = 630 * DP1
+ftbl.backPnl1.width = 475 * DP1
+ftbl.backPnl1.left = 0 * DP1
+ftbl.backPnl1.top = 0 * DP1
+ftbl.backPnl1.BevelWidth = 10
+ftbl.backPnl1.BevelColor = clAqua
+
+ftbl.backImg1 = createImage(ftbl.backPnl1)
+ftbl.backImg1.AutoSize = false
+ftbl.backImg1.height = 630 * DP1
+ftbl.backImg1.width = 475 * DP1
+ftbl.backImg1.left = 0 * DP1
+ftbl.backImg1.top = 0 * DP1
+ftbl.backImg1.Stretch = true
+ftbl.backImg1.OnMouseDown = function()
+form.DragNow()
+end
+
+int = getInternet()
+logostr = int.getURL("https://uploadkon.ir/uploads/ac0522_24111.jpg")
+int.destroy ()
+ss = createStringStream(logostr)
+ftbl.backImg1.Picture.loadFromStream(ss)
+ss.destroy()
 -----------------------Sol.Gaming Create----------------------------------------------------
 local myText = createEdit(form)
 myText.ReadOnly = true myText.Color = 0x22FFF myText.Font.Size = 11
