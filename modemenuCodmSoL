@@ -1,3 +1,5 @@
+----------------------------------------------SoL-Gaming-PrograM----------------------------------------------------
+
 local message = "                                   NEW UPDATE ACTIVE \n"
 local currentTime = os.date("                                                %H:%M:%S")
 local currentDate = os.date("                                  %A, %B %d, %Y")
@@ -6,7 +8,6 @@ local currentDate = os.date("                                  %A, %B %d, %Y")
 message = message .. "".. currentDate .. "\n"
 message = message .. "".. currentTime
 showMessage(message)
----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 if form then form.Destroy() end
 ----------------------------------------------------------------------------------------------
@@ -214,7 +215,6 @@ buttonNo3.Left = 175*DP1
 buttonNo3.Top = 155*DP1
 buttonNo3.Width = 48*DP1
 buttonNo3.BevelWidth = 8
--------------------------------------------------
 ------------------------------------------------------
 ftbl.backPnl1 = createPanel(form)
 ftbl.backPnl1.AutoSize = false
@@ -1643,3 +1643,4 @@ buttonYe999.OnClick = WALLBANGON  buttonN999.OnClick = WALLBANGOFF
 buttonNo143.OnClick = NoreloadOTSON   button1792.OnClick = NoReloadM21
 buttonNo456.OnClick = RegisterON   buttonNo556.OnClick = RegisterOFF
 buttonYe299.OnClick = wallhackON   buttonN992.OnClick = wallhackOFF
+----------------------------------------------------------------finiiiiiished---------------------------------------------
