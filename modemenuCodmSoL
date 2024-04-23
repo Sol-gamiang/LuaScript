@@ -494,11 +494,14 @@ buttonAbout.Left = 72*DP1
 buttonAbout.Top = 605*DP1
 
 local buttonAbout1 = createButton(form)
-buttonAbout1.Caption = '🔴 MinimizE 🔴'
+buttonAbout1.Caption = '🔴 Minimized 🔴'
 buttonAbout1.Width = 100*DP1
 buttonAbout1.Height = 30*DP1
 buttonAbout1.Left = 10*DP1
 buttonAbout1.Top = 570*DP1
+buttonAbout1.OnClick = function()
+form.WindowState = "wsMinimized"
+end
 ---------------------------------------------------------------------------
 ftbl.backPnl1 = createPanel(form)
 ftbl.backPnl1.AutoSize = false
@@ -768,7 +771,7 @@ function showNewForm2()
     local newForm2 = createForm()
     newForm2.Caption = "SoL.gaming Skin Character Menu"
     newForm2.Color = 0x333335
-    newForm2.Width = 240    newForm2.Height = 250
+    newForm2.Width = 240    newForm2.Height = 230
     newForm2.CenterScreen = true
     newForm2.AutoSize = false
     newForm2.Show()
@@ -780,10 +783,10 @@ function showNewForm2()
     ckPnl1.left = 10 * DP1
     ckPnl1.top = 10 * DP1
     ckPnl1.BevelWidth = 1
-    ckPnl1.Caption = 'VivaN Harris!                                '
+    ckPnl1.Caption = 'VivaN Harris                                 '
     ckPnl1.Font.Style="fsBold"
     ckPnl1.Font.Size = 10
-    ckPnl1.Font.Color = 0x0000F8
+    ckPnl1.Font.Color = 0xFFFFFF
 
  -- Define button callbacks
 local buttonON001 = createButton(newForm2)
@@ -831,10 +834,10 @@ buttonOF001.OnClick = function()
     ckPnl1.left = 10 * DP1
     ckPnl1.top = 50 * DP1
     ckPnl1.BevelWidth = 1
-    ckPnl1.Caption = 'Witch WardenOn!                                       '
+    ckPnl1.Caption = 'Witch Warden                                           '
     ckPnl1.Font.Style="fsBold"
-    ckPnl1.Font.Size = 08
-    ckPnl1.Font.Color = 0x0000F8
+    ckPnl1.Font.Size = 09
+    ckPnl1.Font.Color = 0xFFFFFF
 
 local buttonON002 = createButton(newForm2)
 buttonON002.Caption = 'ON'
@@ -876,10 +879,10 @@ buttonOF002.OnClick = function()
     ckPnl1.left = 10 * DP1
     ckPnl1.top = 91 * DP1
     ckPnl1.BevelWidth = 1
-    ckPnl1.Caption = 'MAC.ғɪɴᴀʟ ɢᴜᴀʀᴅ                           '
+    ckPnl1.Caption = 'MacE.ғɪɴᴀʟ ɢᴜᴀʀᴅ                           '
     ckPnl1.Font.Style="fsBold"
     ckPnl1.Font.Size = 10
-    ckPnl1.Font.Color = 0x0000F8
+    ckPnl1.Font.Color = 0xFFFFFF
 
     local buttonON003 = createButton(newForm2)
     buttonON003.Caption = 'ON'
@@ -924,7 +927,7 @@ buttonOF002.OnClick = function()
     ckPnl1.Caption = 'ʟᴇɢᴇɴᴅᴀʀʏ ɢʜᴏsᴛ                         '
     ckPnl1.Font.Style="fsBold"
     ckPnl1.Font.Size = 11
-    ckPnl1.Font.Color = 0x0000F8
+    ckPnl1.Font.Color = 0xFFFFFF
 
     local buttonON004 = createButton(newForm2)
     buttonON004.Caption = 'ON'
@@ -968,7 +971,7 @@ buttonOF002.OnClick = function()
     ckPnl1.Caption = 'Jonh Mclane                                         '
     ckPnl1.Font.Style="fsBold"
     ckPnl1.Font.Size = 10
-    ckPnl1.Font.Color = 0x0000F8
+    ckPnl1.Font.Color = 0xFFFFFF
 
     local buttonON005 = createButton(newForm2)
     buttonON005.Caption = 'ON'
@@ -1010,10 +1013,10 @@ buttonOF002.OnClick = function()
     ckPnl1.left = 10 * DP1
     ckPnl1.top = 172 * DP1
     ckPnl1.BevelWidth = 1
-    ckPnl1.Caption = 'Reaper.Leg                                     '
+    ckPnl1.Caption = 'Reaper.ʟᴇɢ                                     '
     ckPnl1.Font.Style="fsBold"
     ckPnl1.Font.Size = 10
-    ckPnl1.Font.Color = 0x0000F8
+    ckPnl1.Font.Color = 0xFFFFFF
 
     local buttonON006 = createButton(newForm2)
     buttonON006.Caption = 'ON'
@@ -1210,6 +1213,7 @@ function showNewForm()
 
     local button109 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     button109.Caption = 'DLQ Mythic'
+    button109.Font.Color = 0x0000F8
     button109.Height = 24
     button109.Left = 10
     button109.Top = 10
@@ -1219,6 +1223,7 @@ function showNewForm()
 	end
     local button19 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     button19.Caption = 'FFAR Mythic'
+    button19.Font.Color = 0x0000F8
     button19.Height = 24
     button19.Left = 10
     button19.Top = 60
@@ -1228,6 +1233,7 @@ function showNewForm()
 	end
     local button190 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     button190.Caption = '117 Mythic'
+    button190.Font.Color = 0x0000F8
     button190.Height = 24
     button190.Left = 10
     button190.Top = 110
@@ -1237,6 +1243,7 @@ function showNewForm()
 	end
     local button139 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     button139.Caption = 'Garu Legend'
+    button139.Font.Color = 0x0000F8
     button139.Height = 24
     button139.Left = 130
     button139.Top = 110
@@ -1246,6 +1253,7 @@ function showNewForm()
 	end
     local button192 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     button192.Caption = 'Templar Sword'
+    button192.Font.Color = 0x0000F8
     button192.Height = 24
     button192.Left = 130
     button192.Top = 60
@@ -1256,6 +1264,7 @@ function showNewForm()
 
     local butto19 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     butto19.Caption = 'Type25 Phonix '
+    butto19.Font.Color = 0x0000F8
     butto19.Height = 24
     butto19.Left = 130
     butto19.Top = 10
@@ -1265,6 +1274,7 @@ function showNewForm()
 	end
     local buton19 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     buton19.Caption = 'Oden MythiC'
+    buton19.Font.Color = 0x0000F8
     buton19.Height = 24
     buton19.Left = 10
     buton19.Top = 160
@@ -1274,6 +1284,7 @@ function showNewForm()
 	end
     local button149 = createButton(newForm) -- Create the "MenU" button with newForm as parent
     button149.Caption = 'Krm Legend'
+    button149.Font.Color = 0x0000F8
     button149.Height = 24
     button149.Left = 130
     button149.Top = 160
