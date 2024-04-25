@@ -1612,18 +1612,12 @@ end
     showMessage("️⚜️⚜PLEASE NO RUN RED LIGHT &RED LIGHT(Disabled)️⚜️⚜")
     end
     function wallhackON ()
-	searchV = 'EC 51 78 3F'
-	replaceV = '00 00 00 00'
-	AOBRep(searchV,replaceV)
-        searchV = '8F C2 95 3F'
+	searchV = '8F C2 95 3F'
 	replaceV = 'CD CC CC 3D'
 	AOBRep(searchV,replaceV)
     showMessage("️⚜️⚜DLQ UPP FIRE RATE  (Activad)️⚜️⚜")
     end
     function wallhackOFF ()
-	searchV = '00 00 00 00'
-	replaceV = 'EC 51 78 3F'
-	AOBRep(searchV,replaceV)
         searchV = 'CD CC CC 3D'
 	replaceV = '8F C2 95 3F'
 	AOBRep(searchV,replaceV)
