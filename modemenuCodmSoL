@@ -1621,10 +1621,7 @@ end
     showMessage("️⚜️⚜DLQ UPP FIRE RATE  (Activad)️⚜️⚜")
     end
     function wallhackOFF ()
-        searchV = 'CD CC CC 3D'
-	replaceV = '8F C2 95 3F'
-	AOBRep(searchV,replaceV)
-    showMessage("️⚜️⚜ DLQ  UPP FIRE RATE  (Disabled)️⚜️⚜")
+    showMessage("️⚜️⚜   ( NO Disabled)️⚜️⚜")
     end
 ---------------------------------------------------------------------------------------------------------------------------
 buttonYes1.OnClick = HeadShotON   buttonNo1.OnClick = HeadShotOFF
