@@ -1111,10 +1111,10 @@ ftbl.backPnl1.ParentBackground = true
 ftbl.backPnl1.ParentBidiMode = true
 ftbl.backPnl1.ParentColor = true
 ftbl.backPnl1.Color = clDefault
-ftbl.backPnl1.Caption = 'Wall Hack!                                 '
+ftbl.backPnl1.Caption = 'DLQ UP FIRE RATE!                                 '
 ftbl.backPnl1.Font.Style="fsBold"
-ftbl.backPnl1.Font.Size = 10
-ftbl.backPnl1.Font.Color = 0x000080
+ftbl.backPnl1.Font.Size = 08
+ftbl.backPnl1.Font.Color = 0x0000F8
 
 local buttonYe299 = createButton(form)
 buttonYe299.AutoSize=false
@@ -1612,10 +1612,22 @@ end
     showMessage("️⚜️⚜PLEASE NO RUN RED LIGHT &RED LIGHT(Disabled)️⚜️⚜")
     end
     function wallhackON ()
-    showMessage("️⚜️⚜Loading Soon  (Disabled)️⚜️⚜")
+	searchV = 'EC 51 78 3F'
+	replaceV = '00 00 00 00'
+	AOBRep(searchV,replaceV)
+        searchV = '8F C2 95 3F'
+	replaceV = 'CD CC CC 3D'
+	AOBRep(searchV,replaceV)
+    showMessage("️⚜️⚜DLQ UPP FIRE RATE  (Activad)️⚜️⚜")
     end
     function wallhackOFF ()
-    showMessage("️⚜️⚜Loading Soon  (Disabled)️⚜️⚜")
+	searchV = '00 00 00 00'
+	replaceV = 'EC 51 78 3F'
+	AOBRep(searchV,replaceV)
+        searchV = 'CD CC CC 3D'
+	replaceV = '8F C2 95 3F'
+	AOBRep(searchV,replaceV)
+    showMessage("️⚜️⚜ DLQ  UPP FIRE RATE  (Disabled)️⚜️⚜")
     end
 ---------------------------------------------------------------------------------------------------------------------------
 buttonYes1.OnClick = HeadShotON   buttonNo1.OnClick = HeadShotOFF
