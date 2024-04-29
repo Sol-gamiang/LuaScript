@@ -1495,8 +1495,12 @@ end
 	searchV = '66 66 E6 3E 00 00'
     replaceV = '00 00 80 40 00 00'
 	AOBRep(searchV,replaceV)
-    showMessage("️⚜️⚜Aim     Lock   Activad️⚜️⚜")
+	searchV = '0.44999998808'
+         replaceV = '7'
+	findFloatValueAndReplace(searchV,replaceV)
+        showMessage("️⚜️⚜Aim     Lock   Activad️⚜️⚜")
     	end
+
 	function AimAsissOFF()
 	searchV = '00 00 80 40 00 00'
     replaceV = '66 66 E6 3E 00 00'
@@ -1525,6 +1529,8 @@ end
 	findFloatValueAndReplace(searchV,replaceV)
     showMessage("  ️⚜️⚜TopViwe          (Disabled)️⚜️⚜")
     	end
+
+
 --------------------------------------------------
 	function NoReloadM4 ()
     searchV = '2.40000009537'
