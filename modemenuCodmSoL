@@ -1378,7 +1378,7 @@ end
     	end
 	function HeadShotON()
 	searchV = 'BC 74 13 3E 0A D7 A3 3E 00 00'
-    replaceV = 'D1 43 DD 40 0A D7 A3 3E 00 00'
+    replaceV = 'D1 43 DD 3F 0A D7 A3 3E 00 00'
 	AOBRep(searchV,replaceV)
     showMessage("️⚜️⚜️Magic Bullet Activda️⚜️⚜️")
     end
