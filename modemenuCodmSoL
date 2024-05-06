@@ -1,6 +1,6 @@
 ----------------------------------------------SoL-Gaming-PrograM----------------------------------------------------
 
-local message = "                                   NEW UPDATE ACTIVE \n"
+local message = "                                   USER ONLINE \n"
 local currentTime = os.date("                                                %H:%M:%S")
 local currentDate = os.date("                                  %A, %B %d, %Y")
 
