@@ -1380,12 +1380,16 @@ end
 	searchV = 'BC 74 13 3E 0A D7 A3 3E 00 00'
     replaceV = 'D1 43 DD 3F 0A D7 A3 3E 00 00'
 	AOBRep(searchV,replaceV)
+         searchV = '1041462460'   replaceV = '1092616192'
+	findDwordValueAndReplace(searchV , replaceV)
     showMessage("️⚜️⚜️Magic Bullet Activda️⚜️⚜️")
     end
 	function HeadShotOFF()
 	searchV = 'D1 43 DD 40 0A D7 A3 3E 00 00'
     replaceV = 'BC 74 13 3E 0A D7 A3 3E 00 00'
 	AOBRep(searchV,replaceV)
+   searchV = '1092616192'   replaceV = '1041462460'
+	findDwordValueAndReplace(searchV , replaceV)
     showMessage("Magic Bullet Disabled")
     end
 ----------------------------------------------------------------------------
