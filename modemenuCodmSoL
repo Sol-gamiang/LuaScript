@@ -28,7 +28,7 @@ local function deleteFile(file_path)
     local success, err_msg = os.remove(file_path)
 
     if success then
-        showMessage("💠⚜️💠⚜️💠⚜️   AnTi       BANNED      ACTIVE   💠⚜️💠⚜️⚜️💠")
+        showMessage("💠⚜️💠⚜️💠⚜️   AnTi       BANNED     NO ACTIVE   💠⚜️💠⚜️⚜️💠")
     else
         showMessage("NO ACCESS. PLEASE FIRST RUN USER.EXE")
     end
@@ -46,7 +46,7 @@ end
 local function deleteFile(file_path)
     local success, err_msg = os.remove(file_path)
     if success then
-        showMessage("💠⚜️💠⚜️💠⚜️   AnTi       BANNED      ACTIVE   💠⚜️💠⚜️⚜️💠")
+        showMessage("💠⚜️💠⚜️💠⚜️   AnTi       BANNED      NO ACTIVE   💠⚜️💠⚜️⚜️💠")
        end
 end
 local temp_path = os.getenv("TEMP")
