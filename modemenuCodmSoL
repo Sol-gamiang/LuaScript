@@ -1492,22 +1492,26 @@ end
 	searchV = '9A 99 19 3E 00 00 80 3E 00 00 00 40 66 66 66 3F 00 00 C8 42'
 	replaceV = '9A 99 19 3E 00 00 80 3E 00 00 00 40 66 66 66 3F CD CC 4C 3E'
 	AOBRep(searchV,replaceV)
+
     showMessage("️⚜️⚜️Long Slide Disabled️⚜️⚜️")
        	end
 -------------------------------------------------------------------
 	function AimAsissON ()
 	searchV = '66 66 E6 3E 00 00'
-    replaceV = '00 00 80 40 00 00'
+	replaceV = '00 00 80 40 00 00'
 	AOBRep(searchV,replaceV)
-	searchV = '0.44999998808'
-         replaceV = '7'
-	findFloatValueAndReplace(searchV,replaceV)
+	searchV = 'A4 70 3D 3E 66 66 E6 3E'
+	replaceV = '00 00 80 40 66 66 E6 3E'
+	AOBRep(searchV,replaceV)
         showMessage("️⚜️⚜Aim     Lock   Activad️⚜️⚜")
     	end
 
 	function AimAsissOFF()
 	searchV = '00 00 80 40 00 00'
-    replaceV = '66 66 E6 3E 00 00'
+	replaceV = '66 66 E6 3E 00 00'
+	AOBRep(searchV,replaceV)
+	searchV = '00 00 80 40 66 66 E6 3E'
+	replaceV = 'A4 70 3D 3E 66 66 E6 3E'
 	AOBRep(searchV,replaceV)
     showMessage("️⚜️⚜️Aim    Lock    Disabled️⚜️⚜️")
     	end
@@ -1610,16 +1614,16 @@ end
 	end
 ---------------9999999999999999999999999999999999999999999999999999--------
 	function blackskyON ()
-    	searchV = '00 00 80 40 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 AD A3 20 40 5A C2 F5 3C 05 85 1B 40'
-	replaceV = '00 00 80 40 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 AD A3 20 40 5A C2 F5 3C 05 85 1B 47'
+    	searchV = 'B0 00 10 00 00 00 10 40'
+	replaceV = 'B0 00 10 00 00 00 00 00'
 	AOBRep(searchV,replaceV)
-    showMessage("️⚜️⚜PLEASE NO RUN RED  LIGHT &RED LIGHT(Activad)️⚜️⚜")
+    showMessage("️⚜️⚜Black SKY (Activad)️⚜️⚜")
     end
 	function blackskyOFF ()
- 	searchV = '00 00 80 40 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 AD A3 20 40 5A C2 F5 3C 05 85 1B 47'
-	replaceV = '00 00 80 40 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 AD A3 20 40 5A C2 F5 3C 05 85 1B 40'
+ 	searchV = 'B0 00 10 00 00 00 00 00'
+	replaceV = 'B0 00 10 00 00 00 10 40'
 	AOBRep(searchV,replaceV)
-    showMessage("️⚜️⚜PLEASE NO RUN RED LIGHT &RED LIGHT(Disabled)️⚜️⚜")
+    showMessage("️⚜️⚜Black SKY(Disabled)️⚜️⚜")
     end
     function wallhackON ()
 	searchV = 'EC 51 78 3F'
