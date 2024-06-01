@@ -1501,7 +1501,7 @@ end
     replaceV = '00 00 80 40 00 00'
 	AOBRep(searchV,replaceV)
 	searchV = '0.44999998808'
-         replaceV = '7.44999998808'
+         replaceV = '7.11222298208'
 	findFloatValueAndReplace(searchV,replaceV)
         showMessage("️⚜️⚜Aim     Lock   Activad️⚜️⚜")
     	end
@@ -1510,7 +1510,7 @@ end
 	searchV = '00 00 80 40 00 00'
     replaceV = '66 66 E6 3E 00 00'
 	AOBRep(searchV,replaceV)
-searchV = '7.44999998808'
+searchV = '7.11222298208'
          replaceV = '0.44999998808'
 	findFloatValueAndReplace(searchV,replaceV)
     showMessage("️⚜️⚜️Aim    Lock    Disabled️⚜️⚜️")
