@@ -1,10 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-// اینجا باید پردازش و بررسی اطلاعات کاربر انجام شود
-// مثال: بررسی ورودی‌ها و ارسال پاسخ به صورت JSON
 
-// مثال:
 $username = $_POST["username"];
 $password = $_POST["password"];
 
