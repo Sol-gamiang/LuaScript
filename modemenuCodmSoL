@@ -1,16 +1,5 @@
-<?php
-header('Content-Type: application/json');
+نام: پوریا نجفی
+هویت پدر: نا مشخص. (کسی گردن نگرفته)
+نام مستعار مادر: خاله ساک زن
 
-
-$username = $_POST["username"];
-$password = $_POST["password"];
-
-if ($username === "user" && $password === "pass") {
-    $response = array("status" => "success", "message" => "Login successful");
-} else {
-    $response = array("status" => "error", "message" => "Invalid username or password");
-}
-
-echo json_encode($response);
-?>
 
