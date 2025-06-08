@@ -1,8 +1,1548 @@
-نام: پوریا نجفی
-هویت پدر: نا مشخص. (کسی گردن نگرفته)
-نام مستعار مادر: خاله 40 هزار تومنی
-
-شماره تماس مادر:  به دلیل خونریزی کص و کون در اخرین گروپ افلاین می باشد 
+text:00057378                 PUSH            {R4-R7,LR}
+.text:0005737A                 ADD             R7, SP, #0xC
+.text:0005737C                 PUSH.W          {R8-R11}
+.text:00057380                 SUB             SP, SP, #0x64
+.text:00057382                 MOVW            R2, #0x4CA0
+.text:00057386                 MOVW            R3, #0xE72F
+.text:0005738A                 MOVW            R6, #0x391B
+.text:0005738E                 MOVW            R11, #0x41FE
+.text:00057392                 MOVW            R4, #0xFE62
+.text:00057396                 MOVW            R5, #0x5FC6
+.text:0005739A                 MOVW            R12, #0x7782
+.text:0005739E                 MOVW            LR, #0x1E2A
+.text:000573A2                 MOVW            R9, #0x475D
+.text:000573A6                 MOVW            R10, #0x417A
+.text:000573AA                 MOVW            R8, #0xB28E
+.text:000573AE                 MOVT            R2, #0x31C0
+.text:000573B2                 MOVT            R8, #0xEA92
+.text:000573B6                 MOVT            R3, #0x637
+.text:000573BA                 MOVT            R6, #0xC3C
+.text:000573BE                 MOVT            R11, #0x1A22
+.text:000573C2                 MOVT            R4, #0x2721
+.text:000573C6                 MOVT            R5, #0x43D0
+.text:000573CA                 MOVT            R12, #0x5AB2
+.text:000573CE                 MOVT            LR, #0x6E2A
+.text:000573D2                 MOVT            R9, #0x9400
+.text:000573D6                 MOVT            R10, #0xABDE
+.text:000573DA                 CMP             R2, R8
+.text:000573DC                 STRD.W          R1, R0, [R7,#var_7C]
+.text:000573E0                 STR.W           R2, [R7,#var_5C]
+.text:000573E4                 BGE             loc_5740C
+.text:000573E6                 CMP             R2, R10
+.text:000573E8                 BGE             loc_57432
+.text:000573EA                 CMP             R2, R9
+.text:000573EC                 BGE             loc_57464
+.text:000573EE                 MOV             R0, #0x886C0FD3
+.text:000573F6                 CMP             R2, R0
+.text:000573F8                 BGE             loc_574D4
+.text:000573FA                 MOV             R0, #0x81B9BE7D
+.text:00057402                 CMP             R2, R0
+.text:00057404                 BNE.W           loc_57592
+.text:00057408                 B.W             loc_582AC
+.text:0005740C ; ---------------------------------------------------------------------------
+.text:0005740C
+.text:0005740C loc_5740C                               ; CODE XREF: AnoSDKIoctl_0+6C↑j
+.text:0005740C                 CMP             R2, R11
+.text:0005740E                 BGE             loc_57454
+.text:00057410                 MOV             R0, #0xF709C47C
+.text:00057418                 CMP             R2, R0
+.text:0005741A                 BGE             loc_5747A
+.text:0005741C                 MOV             R0, #0xEF591FC2
+.text:00057424                 CMP             R2, R0
+.text:00057426                 BGE             loc_574F2
+.text:00057428                 CMP             R2, R8
+.text:0005742A                 BNE.W           loc_57592
+.text:0005742E                 B.W             loc_58380
+.text:00057432 ; ---------------------------------------------------------------------------
+.text:00057432
+.text:00057432 loc_57432                               ; CODE XREF: AnoSDKIoctl_0+70↑j
+.text:00057432                 MOV             R0, #0xC47B76C3
+.text:0005743A                 CMP             R2, R0
+.text:0005743C                 BGE             loc_5749A
+.text:0005743E                 MOV             R0, #0xB798D8F4
+.text:00057446                 CMP             R2, R0
+.text:00057448                 BGE             loc_5750E
+.text:0005744A                 CMP             R2, R10
+.text:0005744C                 BNE.W           loc_57592
+.text:00057450                 B.W             loc_5840A
+.text:00057454 ; ---------------------------------------------------------------------------
+.text:00057454
+.text:00057454 loc_57454                               ; CODE XREF: AnoSDKIoctl_0+96↑j
+.text:00057454                 CMP             R2, R5
+.text:00057456                 BGE             loc_574C2
+.text:00057458                 CMP             R2, R4
+.text:0005745A                 BGE             loc_5752C
+.text:0005745C                 CMP             R2, R11
+.text:0005745E                 BNE.W           loc_57592
+.text:00057462                 B               loc_57838
+.text:00057464 ; ---------------------------------------------------------------------------
+.text:00057464
+.text:00057464 loc_57464                               ; CODE XREF: AnoSDKIoctl_0+74↑j
+.text:00057464                 MOV             R0, #0x98F9DFAA
+.text:0005746C                 CMP             R2, R0
+.text:0005746E                 BGE             loc_57538
+.text:00057470                 CMP             R2, R9
+.text:00057472                 BNE.W           loc_57592
+.text:00057476                 B.W             loc_584B6
+.text:0005747A ; ---------------------------------------------------------------------------
+.text:0005747A
+.text:0005747A loc_5747A                               ; CODE XREF: AnoSDKIoctl_0+A2↑j
+.text:0005747A                 CMP             R2, R3
+.text:0005747C                 BGE             loc_57556
+.text:0005747E                 MOV             R0, #0xF8068009
+.text:00057486                 CMP             R2, R0
+.text:00057488                 BGE.W           loc_57B3C
+.text:0005748C                 MOV             R0, #0xF709C47C
+.text:00057494                 CMP             R2, R0
+.text:00057496                 BNE             loc_57592
+.text:00057498                 B               loc_57650
+.text:0005749A ; ---------------------------------------------------------------------------
+.text:0005749A
+.text:0005749A loc_5749A                               ; CODE XREF: AnoSDKIoctl_0+C4↑j
+.text:0005749A                 MOV             R0, #0xD9DA2BD0
+.text:000574A2                 CMP             R2, R0
+.text:000574A4                 BGE             loc_57562
+.text:000574A6                 MOV             R0, #0xD2E30380
+.text:000574AE                 CMP             R2, R0
+.text:000574B0                 BGE.W           loc_57FE2
+.text:000574B4                 MOV             R0, #0xC47B76C3
+.text:000574BC                 CMP             R2, R0
+.text:000574BE                 BNE             loc_57592
+.text:000574C0                 B               loc_576F2
+.text:000574C2 ; ---------------------------------------------------------------------------
+.text:000574C2
+.text:000574C2 loc_574C2                               ; CODE XREF: AnoSDKIoctl_0+DE↑j
+.text:000574C2                 CMP             R2, LR
+.text:000574C4                 BGE             loc_5757E
+.text:000574C6                 CMP             R2, R12
+.text:000574C8                 BGE.W           loc_57914
+.text:000574CC                 CMP             R2, R5
+.text:000574CE                 BEQ.W           loc_5776A
+.text:000574D2                 B               loc_57592
+.text:000574D4 ; ---------------------------------------------------------------------------
+.text:000574D4
+.text:000574D4 loc_574D4                               ; CODE XREF: AnoSDKIoctl_0+80↑j
+.text:000574D4                 MOV             R0, #0x9072FC3F
+.text:000574DC                 CMP             R2, R0
+.text:000574DE                 BGE.W           loc_581E8
+.text:000574E2                 MOV             R0, #0x886C0FD3
+.text:000574EA                 CMP             R2, R0
+.text:000574EC                 BNE             loc_57592
+.text:000574EE                 B.W             loc_57E1A
+.text:000574F2 ; ---------------------------------------------------------------------------
+.text:000574F2
+.text:000574F2 loc_574F2                               ; CODE XREF: AnoSDKIoctl_0+AE↑j
+.text:000574F2                 MOV             R0, #0xF25D82F2
+.text:000574FA                 CMP             R2, R0
+.text:000574FC                 BGE.W           loc_57C3A
+.text:00057500                 MOV             R0, #0xEF591FC2
+.text:00057508                 CMP             R2, R0
+.text:0005750A                 BNE             loc_57592
+.text:0005750C                 B               loc_57B82
+.text:0005750E ; ---------------------------------------------------------------------------
+.text:0005750E
+.text:0005750E loc_5750E                               ; CODE XREF: AnoSDKIoctl_0+D0↑j
+.text:0005750E                 MOV             R0, #0xC2D69496
+.text:00057516                 CMP             R2, R0
+.text:00057518                 BGE.W           loc_5809A
+.text:0005751C                 MOV             R0, #0xB798D8F4
+.text:00057524                 CMP             R2, R0
+.text:00057526                 BNE             loc_57592
+.text:00057528                 B.W             loc_57F0E
+.text:0005752C ; ---------------------------------------------------------------------------
+.text:0005752C
+.text:0005752C loc_5752C                               ; CODE XREF: AnoSDKIoctl_0+E2↑j
+.text:0005752C                 CMP             R2, R2
+.text:0005752E                 BGE.W           loc_579BA
+.text:00057532                 CMP             R2, R4
+.text:00057534                 BNE             loc_57592
+.text:00057536                 B               loc_57986
+.text:00057538 ; ---------------------------------------------------------------------------
+.text:00057538
+.text:00057538 loc_57538                               ; CODE XREF: AnoSDKIoctl_0+F6↑j
+.text:00057538                 MOV             R0, #0xA510A4A4
+.text:00057540                 CMP             R2, R0
+.text:00057542                 BGE.W           loc_58186
+.text:00057546                 MOV             R0, #0x98F9DFAA
+.text:0005754E                 CMP             R2, R0
+.text:00057550                 BNE             loc_57592
+.text:00057552                 B.W             loc_57FAE
+.text:00057556 ; ---------------------------------------------------------------------------
+.text:00057556
+.text:00057556 loc_57556                               ; CODE XREF: AnoSDKIoctl_0+104↑j
+.text:00057556                 CMP             R2, R6
+.text:00057558                 BGE.W           loc_57B0A
+.text:0005755C                 CMP             R2, R3
+.text:0005755E                 BNE             loc_57592
+.text:00057560                 B               loc_57A54
+.text:00057562 ; ---------------------------------------------------------------------------
+.text:00057562
+.text:00057562 loc_57562                               ; CODE XREF: AnoSDKIoctl_0+12C↑j
+.text:00057562                 MOV             R0, #0xE07FA512
+.text:0005756A                 CMP             R2, R0
+.text:0005756C                 BGE.W           loc_57D76
+.text:00057570                 MOV             R0, #0xD9DA2BD0
+.text:00057578                 CMP             R2, R0
+.text:0005757A                 BNE             loc_57592
+.text:0005757C                 B               loc_57CCC
+.text:0005757E ; ---------------------------------------------------------------------------
+.text:0005757E
+.text:0005757E loc_5757E                               ; CODE XREF: AnoSDKIoctl_0+14C↑j
+.text:0005757E                 MOV             R0, #0x7488369C
+.text:00057586                 CMP             R2, R0
+.text:00057588                 BGE.W           loc_578E8
+.text:0005758C                 CMP             R2, LR
+.text:0005758E                 BEQ.W           loc_57796
+.text:00057592
+.text:00057592 loc_57592                               ; CODE XREF: AnoSDKIoctl_0+8C↑j
+.text:00057592                                         ; AnoSDKIoctl_0+B2↑j ...
+.text:00057592                 LDR.W           R0, [R7,#var_5C]
+.text:00057596                 CMP             R0, R8
+.text:00057598                 BGE             loc_575C0
+.text:0005759A                 CMP             R0, R10
+.text:0005759C                 BGE             loc_575E6
+.text:0005759E                 CMP             R0, R9
+.text:000575A0                 BGE             loc_5761A
+.text:000575A2                 MOV             R1, #0x886C0FD3
+.text:000575AA                 CMP             R0, R1
+.text:000575AC
+.text:000575AC loc_575AC                               ; DATA XREF: .text:000571FA↑r
+.text:000575AC                 BGE.W           loc_57DFE
+.text:000575B0
+.text:000575B0 loc_575B0                               ; CODE XREF: AnoSDKIoctl_0+A82↓j
+.text:000575B0                 MOV             R1, #0x81B9BE7D
+.text:000575B8                 CMP             R0, R1
+.text:000575BA                 BNE             loc_57592
+.text:000575BC                 B.W             loc_582AC
+.text:000575C0 ; ---------------------------------------------------------------------------
+.text:000575C0
+.text:000575C0 loc_575C0                               ; CODE XREF: AnoSDKIoctl_0+220↑j
+.text:000575C0                 CMP             R0, R11
+.text:000575C2                 BGE             loc_57608
+.text:000575C4                 MOV             R1, #0xF709C47C
+.text:000575CC                 CMP             R0, R1
+.text:000575CE                 BGE             loc_57630
+.text:000575D0                 MOV             R1, #0xEF591FC2
+.text:000575D8                 CMP             R0, R1
+.text:000575DA                 BGE.W           loc_57B68
+.text:000575DE
+.text:000575DE loc_575DE                               ; CODE XREF: AnoSDKIoctl_0+B20↓j
+.text:000575DE                 CMP             R0, R8
+.text:000575E0                 BNE             loc_57592
+.text:000575E2                 B.W             loc_58380
+.text:000575E6 ; ---------------------------------------------------------------------------
+.text:000575E6
+.text:000575E6 loc_575E6                               ; CODE XREF: AnoSDKIoctl_0+224↑j
+.text:000575E6                 MOV             R1, #0xC47B76C3
+.text:000575EE                 CMP             R0, R1
+.text:000575F0                 BGE             loc_576C8
+.text:000575F2                 MOV             R1, #0xB798D8F4
+.text:000575FA                 CMP             R0, R1
+.text:000575FC                 BGE.W           loc_57EF2
+.text:00057600
+.text:00057600 loc_57600                               ; CODE XREF: AnoSDKIoctl_0+B76↓j
+.text:00057600                 CMP             R0, R10
+.text:00057602                 BNE             loc_57592
+.text:00057604                 B.W             loc_5840A
+.text:00057608 ; ---------------------------------------------------------------------------
+.text:00057608
+.text:00057608 loc_57608                               ; CODE XREF: AnoSDKIoctl_0+24A↑j
+.text:00057608                 CMP             R0, R5
+.text:0005760A                 BGE.W           loc_57758
+.text:0005760E                 CMP             R0, R4
+.text:00057610                 BGE.W           loc_5797C
+.text:00057614
+.text:00057614 loc_57614                               ; CODE XREF: AnoSDKIoctl_0+BE6↓j
+.text:00057614                 CMP             R0, R11
+.text:00057616                 BNE             loc_57592
+.text:00057618                 B               loc_57838
+.text:0005761A ; ---------------------------------------------------------------------------
+.text:0005761A
+.text:0005761A loc_5761A                               ; CODE XREF: AnoSDKIoctl_0+228↑j
+.text:0005761A                 MOV             R1, #0x98F9DFAA
+.text:00057622                 CMP             R0, R1
+.text:00057624                 BGE.W           loc_57F92
+.text:00057628
+.text:00057628 loc_57628                               ; CODE XREF: AnoSDKIoctl_0+C16↓j
+.text:00057628                 CMP             R0, R9
+.text:0005762A                 BNE             loc_57592
+.text:0005762C                 B.W             loc_584B6
+.text:00057630 ; ---------------------------------------------------------------------------
+.text:00057630
+.text:00057630 loc_57630                               ; CODE XREF: AnoSDKIoctl_0+256↑j
+.text:00057630                 CMP             R0, R3
+.text:00057632                 BGE.W           loc_57A4A
+.text:00057636
+.text:00057636 loc_57636                               ; CODE XREF: AnoSDKIoctl_0+6CE↓j
+.text:00057636                 MOV             R1, #0xF8068009
+.text:0005763E                 CMP             R0, R1
+.text:00057640                 BGE.W           loc_57B3C
+.text:00057644
+.text:00057644 loc_57644                               ; CODE XREF: AnoSDKIoctl_0+11B2↓j
+.text:00057644                 MOV             R1, #0xF709C47C
+.text:0005764C                 CMP             R0, R1
+.text:0005764E                 BNE             loc_57592
+.text:00057650
+.text:00057650 loc_57650                               ; CODE XREF: AnoSDKIoctl_0+120↑j
+.text:00057650                 LDR.W           R3, [R7,#var_2C]
+.text:00057654                 MOVS            R1, #0x10
+.text:00057656                 LDR             R2, =(aD - 0x57660) ; "%d"
+.text:00057658                 LDR.W           R0, [R7,#var_28]
+.text:0005765C                 ADD             R2, PC  ; "%d"
+.text:0005765E                 BL              sub_2C0918
+.text:00057662                 LDR.W           R0, [R7,#var_28]
+.text:00057666                 BL              sub_2C0092
+.text:0005766A                 LDR.W           R1, [R7,#var_24]
+.text:0005766E                 MOV             R2, #0x98F9DFAA
+.text:00057676                 CMP             R0, #0
+.text:00057678                 ITT EQ
+.text:0005767A                 MOVWEQ          R2, #0x2BD0
+.text:0005767E                 MOVTEQ          R2, #0xD9DA
+.text:00057682                 MOVW            LR, #0x1E2A
+.text:00057686                 STR.W           R0, [R1,#2]
+.text:0005768A                 MOVW            R0, #0xFAA
+.text:0005768E                 MOVW            R12, #0x7782
+.text:00057692                 MOVW            R5, #0x5FC6
+.text:00057696                 MOVW            R4, #0xFE62
+.text:0005769A                 MOVW            R6, #0x391B
+.text:0005769E                 MOVW            R3, #0xE72F
+.text:000576A2                 STR.W           R0, [R7,#var_60]
+.text:000576A6                 MOVW            R0, #:lower16:(loc_98F9C+1)
+.text:000576AA                 MOVT            LR, #0x6E2A
+.text:000576AE                 MOVT            R12, #0x5AB2
+.text:000576B2                 MOVT            R5, #0x43D0
+.text:000576B6                 MOVT            R4, #0x2721
+.text:000576BA                 MOVT            R6, #0xC3C
+.text:000576BE                 MOVT            R3, #0x637
+.text:000576C2                 MOVT            R0, #:upper16:(loc_98F9C+1)
+.text:000576C6                 B               loc_577F8
+.text:000576C8 ; ---------------------------------------------------------------------------
+.text:000576C8
+.text:000576C8 loc_576C8                               ; CODE XREF: AnoSDKIoctl_0+278↑j
+.text:000576C8                 MOV             R1, #0xD9DA2BD0
+.text:000576D0                 CMP             R0, R1
+.text:000576D2                 BGE.W           loc_57CB2
+.text:000576D6
+.text:000576D6 loc_576D6                               ; CODE XREF: AnoSDKIoctl_0+936↓j
+.text:000576D6                 MOV             R1, #0xD2E30380
+.text:000576DE                 CMP             R0, R1
+.text:000576E0                 BGE.W           loc_57FE2
+.text:000576E4
+.text:000576E4 loc_576E4                               ; CODE XREF: AnoSDKIoctl_0+120A↓j
+.text:000576E4                 MOV             R1, #0xC47B76C3
+.text:000576EC                 CMP             R0, R1
+.text:000576EE                 BNE.W           loc_57592
+.text:000576F2
+.text:000576F2 loc_576F2                               ; CODE XREF: AnoSDKIoctl_0+148↑j
+.text:000576F2                 LDR.W           R0, [R7,#var_40]
+.text:000576F6                 BL              sub_2C0092
+.text:000576FA                 LDR.W           R1, [R7,#var_3C]
+.text:000576FE                 MOV             R2, #0xD2E30380
+.text:00057706                 CMP             R0, #0
+.text:00057708                 ITT EQ
+.text:0005770A                 MOVWEQ          R2, #0x7782
+.text:0005770E                 MOVTEQ          R2, #0x5AB2
+.text:00057712                 MOVW            LR, #0x1E2A
+.text:00057716                 STR.W           R0, [R1,#2]
+.text:0005771A                 MOV.W           R0, #0x380
+.text:0005771E                 MOVW            R12, #0x7782
+.text:00057722                 MOVW            R5, #0x5FC6
+.text:00057726                 MOVW            R4, #0xFE62
+.text:0005772A                 MOVW            R6, #0x391B
+.text:0005772E                 MOVW            R3, #0xE72F
+.text:00057732                 STR.W           R0, [R7,#var_60]
+.text:00057736                 MOVW            R0, #:lower16:loc_D2E30
+.text:0005773A                 MOVT            LR, #0x6E2A
+.text:0005773E                 MOVT            R12, #0x5AB2
+.text:00057742                 MOVT            R5, #0x43D0
+.text:00057746                 MOVT            R4, #0x2721
+.text:0005774A                 MOVT            R6, #0xC3C
+.text:0005774E                 MOVT            R3, #0x637
+.text:00057752                 MOVT            R0, #:upper16:loc_D2E30
+.text:00057756                 B               loc_577F8
+.text:00057758 ; ---------------------------------------------------------------------------
+.text:00057758
+.text:00057758 loc_57758                               ; CODE XREF: AnoSDKIoctl_0+292↑j
+.text:00057758                 CMP             R0, LR
+.text:0005775A                 BGE.W           loc_578A0
+.text:0005775E
+.text:0005775E loc_5775E                               ; CODE XREF: AnoSDKIoctl_0+524↓j
+.text:0005775E                 CMP             R0, R12
+.text:00057760                 BGE.W           loc_57914
+.text:00057764
+.text:00057764 loc_57764                               ; CODE XREF: AnoSDKIoctl_0+1248↓j
+.text:00057764                 CMP             R0, R5
+.text:00057766                 BNE.W           loc_57592
+.text:0005776A
+.text:0005776A loc_5776A                               ; CODE XREF: AnoSDKIoctl_0+156↑j
+.text:0005776A                 LDR.W           R0, [R7,#ptr] ; ptr
+.text:0005776E                 BLX             free
+.text:00057772                 MOV             R0, #0xA510A
+.text:0005777A                 STR.W           R0, [R7,#var_64]
+.text:0005777E                 MOVW            R0, #0x4A4
+.text:00057782                 STR.W           R0, [R7,#var_60]
+.text:00057786                 MOV             R0, #0xA510A4A4
+.text:0005778E                 STR.W           R0, [R7,#var_5C]
+.text:00057792                 MOVS            R0, #0
+.text:00057794                 B               loc_57862
+.text:00057796 ; ---------------------------------------------------------------------------
+.text:00057796
+.text:00057796 loc_57796                               ; CODE XREF: AnoSDKIoctl_0+216↑j
+.text:00057796                                         ; AnoSDKIoctl_0+53A↓j
+.text:00057796                 LDR.W           R0, [R7,#var_38]
+.text:0005779A                 BL              sub_2C0092
+.text:0005779E                 MOVW            R4, #0xFE62
+.text:000577A2                 LDR.W           R1, [R7,#ptr]
+.text:000577A6                 MOVT            R4, #0x2721
+.text:000577AA                 CMP             R0, #0
+.text:000577AC                 MOV             R2, R4
+.text:000577AE                 MOVW            LR, #0x1E2A
+.text:000577B2                 ITT EQ
+.text:000577B4                 MOVWEQ          R2, #0x5FC6
+.text:000577B8                 MOVTEQ          R2, #0x43D0
+.text:000577BC                 STR.W           R0, [R1,#2]
+.text:000577C0                 MOVW            R0, #0x5372
+.text:000577C4                 MOVW            R12, #0x7782
+.text:000577C8                 MOVT            R0, #0xBE85
+.text:000577CC                 MOVW            R5, #0x5FC6
+.text:000577D0                 MOVW            R6, #0x391B
+.text:000577D4                 MOVW            R3, #0xE72F
+.text:000577D8                 STR.W           R0, [R7,#var_60]
+.text:000577DC                 MOVW            R0, #0xAD10
+.text:000577E0                 MOVT            LR, #0x6E2A
+.text:000577E4                 MOVT            R12, #0x5AB2
+.text:000577E8                 MOVT            R5, #0x43D0
+.text:000577EC                 MOVT            R6, #0xC3C
+.text:000577F0                 MOVT            R3, #0x637
+.text:000577F4                 MOVT            R0, #0x99A4
+.text:000577F8
+.text:000577F8 loc_577F8                               ; CODE XREF: AnoSDKIoctl_0+34E↑j
+.text:000577F8                                         ; AnoSDKIoctl_0+3DE↑j
+.text:000577F8                 STR.W           R2, [R7,#var_5C]
+.text:000577FC                 MOVW            R2, #0x4CA0
+.text:00057800                 STR.W           R0, [R7,#var_64]
+.text:00057804                 MOVT            R2, #0x31C0
+.text:00057808                 B               loc_57592
+.text:0005780A ; ---------------------------------------------------------------------------
+.text:0005780A
+.text:0005780A loc_5780A                               ; CODE XREF: AnoSDKIoctl_0+10D4↓j
+.text:0005780A                 MOVW            R2, #0x4CA0
+.text:0005780E                 MOVW            R3, #0xE72F
+.text:00057812                 MOVW            R6, #0x391B
+.text:00057816                 MOVW            R12, #0x7782
+.text:0005781A                 MOVW            LR, #0x1E2A
+.text:0005781E                 CMP             R0, R11
+.text:00057820                 MOVT            R2, #0x31C0
+.text:00057824                 MOVT            R3, #0x637
+.text:00057828                 MOVT            R6, #0xC3C
+.text:0005782C                 MOVT            R12, #0x5AB2
+.text:00057830                 MOVT            LR, #0x6E2A
+.text:00057834                 BNE.W           loc_57592
+.text:00057838
+.text:00057838 loc_57838                               ; CODE XREF: AnoSDKIoctl_0+EA↑j
+.text:00057838                                         ; AnoSDKIoctl_0+2A0↑j
+.text:00057838                 LDR.W           R1, [R7,#var_78]
+.text:0005783C                 MOV             R0, #(loc_886BE+2)
+.text:00057844                 CMP             R1, #0x12
+.text:00057846                 MOV             R1, #0x886C0FD3
+.text:0005784E                 STR.W           R0, [R7,#var_64]
+.text:00057852                 MOVW            R0, #0xFD3
+.text:00057856                 ITT LT
+.text:00057858                 MOVWLT          R1, #0x475D
+.text:0005785C                 MOVTLT          R1, #0x9400
+.text:00057860                 B               loc_57C66
+.text:00057862 ; ---------------------------------------------------------------------------
+.text:00057862
+.text:00057862 loc_57862                               ; CODE XREF: AnoSDKIoctl_0+41C↑j
+.text:00057862                                         ; AnoSDKIoctl_0+640↓j
+.text:00057862                 STR.W           R0, [R7,#var_6C]
+.text:00057866                 B.W             loc_58246
+.text:0005786A ; ---------------------------------------------------------------------------
+.text:0005786A
+.text:0005786A loc_5786A                               ; CODE XREF: AnoSDKIoctl_0+BB0↓j
+.text:0005786A                 MOVW            LR, #0x1E2A
+.text:0005786E                 MOVW            R2, #0x4CA0
+.text:00057872                 MOVW            R3, #0xE72F
+.text:00057876                 MOVW            R6, #0x391B
+.text:0005787A                 MOVW            R4, #0xFE62
+.text:0005787E                 MOVW            R12, #0x7782
+.text:00057882                 MOVT            LR, #0x6E2A
+.text:00057886                 CMP             R0, LR
+.text:00057888                 MOVT            R2, #0x31C0
+.text:0005788C                 MOVT            R3, #0x637
+.text:00057890                 MOVT            R6, #0xC3C
+.text:00057894                 MOVT            R4, #0x2721
+.text:00057898                 MOVT            R12, #0x5AB2
+.text:0005789C                 BLT.W           loc_5775E
+.text:000578A0
+.text:000578A0 loc_578A0                               ; CODE XREF: AnoSDKIoctl_0+3E2↑j
+.text:000578A0                 MOV             R1, #0x7488369C
+.text:000578A8                 CMP             R0, R1
+.text:000578AA                 BGE             loc_578E8
+.text:000578AC
+.text:000578AC loc_578AC                               ; CODE XREF: AnoSDKIoctl_0+56E↓j
+.text:000578AC                 CMP             R0, LR
+.text:000578AE                 BNE.W           loc_57592
+.text:000578B2                 B               loc_57796
+.text:000578B4 ; ---------------------------------------------------------------------------
+.text:000578B4
+.text:000578B4 loc_578B4                               ; CODE XREF: AnoSDKIoctl_0+121A↓j
+.text:000578B4                 MOVW            R1, #0x369C
+.text:000578B8                 MOVW            R2, #0x4CA0
+.text:000578BC                 MOVW            R3, #0xE72F
+.text:000578C0                 MOVW            R6, #0x391B
+.text:000578C4                 MOVW            R4, #0xFE62
+.text:000578C8                 MOVW            R12, #0x7782
+.text:000578CC                 MOVT            R1, #0x7488
+.text:000578D0                 CMP             R0, R1
+.text:000578D2                 MOVT            R2, #0x31C0
+.text:000578D6                 MOVT            R3, #0x637
+.text:000578DA                 MOVT            R6, #0xC3C
+.text:000578DE                 MOVT            R4, #0x2721
+.text:000578E2                 MOVT            R12, #0x5AB2
+.text:000578E6                 BLT             loc_578AC
+.text:000578E8
+.text:000578E8 loc_578E8                               ; CODE XREF: AnoSDKIoctl_0+210↑j
+.text:000578E8                                         ; AnoSDKIoctl_0+532↑j
+.text:000578E8                 BNE.W           loc_57592
+.text:000578EC                 MOV             R0, #0xB798D
+.text:000578F4                 MOV             R1, R0
+.text:000578F6                 STR.W           R0, [R7,#var_64]
+.text:000578FA                 MOVW            R0, #0x8F4
+.text:000578FE                 STR.W           R0, [R7,#var_60]
+.text:00057902                 LSLS            R0, R1, #0xC
+.text:00057904                 ADDW            R0, R0, #0x8F4
+.text:00057908                 STR.W           R0, [R7,#var_5C]
+.text:0005790C
+.text:0005790C loc_5790C                               ; CODE XREF: AnoSDKIoctl_0+10B8↓j
+.text:0005790C                 MOVS            R0, #0
+.text:0005790E
+.text:0005790E loc_5790E                               ; CODE XREF: AnoSDKIoctl_0+7EE↓j
+.text:0005790E                 STR.W           R0, [R7,#var_74]
+.text:00057912                 B               loc_57592
+.text:00057914 ; ---------------------------------------------------------------------------
+.text:00057914
+.text:00057914 loc_57914                               ; CODE XREF: AnoSDKIoctl_0+150↑j
+.text:00057914                                         ; AnoSDKIoctl_0+3E8↑j ...
+.text:00057914                 BNE.W           loc_57592
+.text:00057918                 LDR.W           R0, [R7,#var_3C] ; ptr
+.text:0005791C                 BLX             free
+.text:00057920                 MOVW            R0, #:lower16:(loc_C3C38+1)
+.text:00057924                 MOVW            LR, #0x1E2A
+.text:00057928                 MOVT            R0, #:upper16:(loc_C3C38+1)
+.text:0005792C                 MOVW            R12, #0x7782
+.text:00057930                 MOV             R1, R0
+.text:00057932                 STR.W           R0, [R7,#var_64]
+.text:00057936                 MOVS            R0, #0x1B
+.text:00057938                 MOVW            R5, #0x5FC6
+.text:0005793C                 STR.W           R0, [R7,#var_60]
+.text:00057940                 LSLS            R0, R1, #8
+.text:00057942                 ADDS            R0, #0x1B
+.text:00057944                 MOVW            R4, #0xFE62
+.text:00057948                 MOVW            R6, #0x391B
+.text:0005794C                 MOVW            R3, #0xE72F
+.text:00057950                 MOVW            R2, #0x4CA0
+.text:00057954                 STR.W           R0, [R7,#var_5C]
+.text:00057958                 MOVS            R0, #0
+.text:0005795A                 MOVT            LR, #0x6E2A
+.text:0005795E                 MOVT            R12, #0x5AB2
+.text:00057962                 MOVT            R5, #0x43D0
+.text:00057966                 MOVT            R4, #0x2721
+.text:0005796A                 MOVT            R6, #0xC3C
+.text:0005796E                 MOVT            R3, #0x637
+.text:00057972                 MOVT            R2, #0x31C0
+.text:00057976                 STR.W           R0, [R7,#var_68]
+.text:0005797A                 B               loc_57592
+.text:0005797C ; ---------------------------------------------------------------------------
+.text:0005797C
+.text:0005797C loc_5797C                               ; CODE XREF: AnoSDKIoctl_0+298↑j
+.text:0005797C                                         ; AnoSDKIoctl_0+BEA↓j
+.text:0005797C                 CMP             R0, R2
+.text:0005797E                 BGE             loc_579BA
+.text:00057980
+.text:00057980 loc_57980                               ; CODE XREF: AnoSDKIoctl_0+1102↓j
+.text:00057980                 CMP             R0, R4
+.text:00057982                 BNE.W           loc_57592
+.text:00057986
+.text:00057986 loc_57986                               ; CODE XREF: AnoSDKIoctl_0+1BE↑j
+.text:00057986                 LDR.W           R0, [R7,#var_38]
+.text:0005798A                 BL              sub_2BFFE6
+.text:0005798E                 LDR.W           R1, [R7,#ptr]
+.text:00057992                 ADDS            R0, #1
+.text:00057994                 STRH            R0, [R1]
+.text:00057996                 MOVS            R0, #0xA4
+.text:00057998                 STR.W           R0, [R7,#var_60]
+.text:0005799C                 MOV             R0, #0xA510A4
+.text:000579A4                 MOVW            R1, #0xA4A4
+.text:000579A8                 STR.W           R0, [R7,#var_64]
+.text:000579AC                 MOVT            R1, #0xA510
+.text:000579B0                 LDR.W           R0, [R7,#ptr]
+.text:000579B4                 STR.W           R1, [R7,#var_5C]
+.text:000579B8                 B               loc_57862
+.text:000579BA ; ---------------------------------------------------------------------------
+.text:000579BA
+.text:000579BA loc_579BA                               ; CODE XREF: AnoSDKIoctl_0+1B6↑j
+.text:000579BA                                         ; AnoSDKIoctl_0+606↑j ...
+.text:000579BA                 BNE.W           loc_57592
+.text:000579BE                 SUB.W           R0, SP, #0x40 ; '@'
+.text:000579C2                 MOV             SP, R0
+.text:000579C4                 STR.W           R0, [R7,#var_58]
+.text:000579C8                 SUB.W           R0, SP, #0x100
+.text:000579CC                 MOV             SP, R0
+.text:000579CE                 STR.W           R0, [R7,#var_54]
+.text:000579D2                 SUB.W           R0, SP, #0x400
+.text:000579D6                 MOV             SP, R0
+.text:000579D8                 STR.W           R0, [R7,#var_50]
+.text:000579DC                 SUB.W           R0, SP, #8
+.text:000579E0                 MOV             SP, R0
+.text:000579E2                 STR.W           R0, [R7,#var_4C]
+.text:000579E6                 SUB.W           R0, SP, #0x10
+.text:000579EA                 MOV             SP, R0
+.text:000579EC                 STR.W           R0, [R7,#var_48]
+.text:000579F0                 MOVW            R0, #:lower16:(loc_1A2240+1)
+.text:000579F4                 MOVS            R1, #0xFE
+.text:000579F6                 MOVT            R0, #:upper16:(loc_1A2240+1)
+.text:000579FA                 STR.W           R1, [R7,#var_60]
+.text:000579FE                 STR.W           R0, [R7,#var_64]
+.text:00057A02                 STR.W           R11, [R7,#var_5C]
+.text:00057A06                 B               loc_57592
+.text:00057A06 ; ---------------------------------------------------------------------------
+.text:00057A08 off_57A08       DCD aD - 0x57660        ; DATA XREF: AnoSDKIoctl_0+2DE↑r
+.text:00057A08                                         ; "%d"
+.text:00057A0C ; ---------------------------------------------------------------------------
+.text:00057A0C
+.text:00057A0C loc_57A0C                               ; CODE XREF: AnoSDKIoctl_0+ADA↓j
+.text:00057A0C                 MOVW            R3, #0xE72F
+.text:00057A10                 MOVW            R2, #0x4CA0
+.text:00057A14                 MOVW            R6, #0x391B
+.text:00057A18                 MOVW            R4, #0xFE62
+.text:00057A1C                 MOVW            R5, #0x5FC6
+.text:00057A20                 MOVW            R12, #0x7782
+.text:00057A24                 MOVW            LR, #0x1E2A
+.text:00057A28                 MOVT            R3, #0x637
+.text:00057A2C                 CMP             R0, R3
+.text:00057A2E                 MOVT            R2, #0x31C0
+.text:00057A32                 MOVT            R6, #0xC3C
+.text:00057A36                 MOVT            R4, #0x2721
+.text:00057A3A                 MOVT            R5, #0x43D0
+.text:00057A3E                 MOVT            R12, #0x5AB2
+.text:00057A42                 MOVT            LR, #0x6E2A
+.text:00057A46                 BLT.W           loc_57636
+.text:00057A4A
+.text:00057A4A loc_57A4A                               ; CODE XREF: AnoSDKIoctl_0+2BA↑j
+.text:00057A4A                 CMP             R0, R6
+.text:00057A4C                 BGE             loc_57B0A
+.text:00057A4E
+.text:00057A4E loc_57A4E                               ; CODE XREF: AnoSDKIoctl_0+790↓j
+.text:00057A4E                 CMP             R0, R3
+.text:00057A50                 BNE.W           loc_57592
+.text:00057A54
+.text:00057A54 loc_57A54                               ; CODE XREF: AnoSDKIoctl_0+1E8↑j
+.text:00057A54                 LDR.W           R0, [R7,#var_58]
+.text:00057A58                 VMOV.I32        Q8, #0
+.text:00057A5C                 STR.W           R0, [R7,#var_44]
+.text:00057A60                 MOVS            R1, #0x30 ; '0'
+.text:00057A62                 LDR.W           R0, [R7,#var_44]
+.text:00057A66                 LDR.W           R0, [R7,#var_44]
+.text:00057A6A                 MOV             R2, R0
+.text:00057A6C                 VST1.8          {D16-D17}, [R2],R1
+.text:00057A70                 ADD.W           R1, R0, #0x20 ; ' '
+.text:00057A74                 ADDS            R0, #0x10
+.text:00057A76                 VST1.8          {D16-D17}, [R1]
+.text:00057A7A                 MOVS            R1, #0xFF
+.text:00057A7C                 VST1.8          {D16-D17}, [R2]
+.text:00057A80                 VST1.8          {D16-D17}, [R0]
+.text:00057A84                 LDR.W           R0, [R7,#var_54]
+.text:00057A88                 STR.W           R0, [R7,#var_40]
+.text:00057A8C                 LDR.W           R0, [R7,#var_40]
+.text:00057A90                 LDR.W           R0, [R7,#var_40]
+.text:00057A94                 BLX             __aeabi_memclr
+.text:00057A98                 MOVS            R0, #6  ; size
+.text:00057A9A                 BLX             malloc
+.text:00057A9E                 STR.W           R0, [R7,#var_3C]
+.text:00057AA2                 MOVW            R0, #0xC3F
+.text:00057AA6                 STR.W           R0, [R7,#var_60]
+.text:00057AAA                 MOV             R0, #0x9072F
+.text:00057AB2                 MOVS            R1, #0
+.text:00057AB4                 STR.W           R0, [R7,#var_64]
+.text:00057AB8                 LDR.W           R0, [R7,#var_3C]
+.text:00057ABC                 CMP             R0, #0
+.text:00057ABE                 MOV             R0, #0x9072FC3F
+.text:00057AC6                 ITT EQ
+.text:00057AC8                 MOVWEQ          R0, #0x391B
+.text:00057ACC                 MOVTEQ          R0, #0xC3C
+.text:00057AD0                 STR.W           R1, [R7,#var_68]
+.text:00057AD4                 B               loc_58242
+.text:00057AD6 ; ---------------------------------------------------------------------------
+.text:00057AD6
+.text:00057AD6 loc_57AD6                               ; CODE XREF: AnoSDKIoctl_0+1174↓j
+.text:00057AD6                 MOVW            R6, #0x391B
+.text:00057ADA                 MOVW            R2, #0x4CA0
+.text:00057ADE                 MOVW            R4, #0xFE62
+.text:00057AE2                 MOVW            R5, #0x5FC6
+.text:00057AE6                 MOVW            R12, #0x7782
+.text:00057AEA                 MOVW            LR, #0x1E2A
+.text:00057AEE                 MOVT            R6, #0xC3C
+.text:00057AF2                 CMP             R0, R6
+.text:00057AF4                 MOVT            R2, #0x31C0
+.text:00057AF8                 MOVT            R4, #0x2721
+.text:00057AFC                 MOVT            R5, #0x43D0
+.text:00057B00                 MOVT            R12, #0x5AB2
+.text:00057B04                 MOVT            LR, #0x6E2A
+.text:00057B08                 BLT             loc_57A4E
+.text:00057B0A
+.text:00057B0A loc_57B0A                               ; CODE XREF: AnoSDKIoctl_0+1E0↑j
+.text:00057B0A                                         ; AnoSDKIoctl_0+6D4↑j
+.text:00057B0A                 BNE.W           loc_57592
+.text:00057B0E                 LDR.W           R0, [R7,#var_40]
+.text:00057B12                 MOVW            R1, #0x23A5
+.text:00057B16                 MOVW            R0, #0xFB51
+.text:00057B1A                 MOVT            R1, #0x6C9
+.text:00057B1E                 MOVT            R0, #0xB151
+.text:00057B22                 STR.W           R1, [R7,#var_64]
+.text:00057B26                 STR.W           R0, [R7,#var_60]
+.text:00057B2A                 LDR.W           R0, [R7,#var_68]
+.text:00057B2E                 LDR.W           R1, [R7,#var_44]
+.text:00057B32                 MOV             R1, #0xB798D8F4
+.text:00057B3A                 B               loc_57B62
+.text:00057B3C ; ---------------------------------------------------------------------------
+.text:00057B3C
+.text:00057B3C loc_57B3C                               ; CODE XREF: AnoSDKIoctl_0+110↑j
+.text:00057B3C                                         ; AnoSDKIoctl_0+2C8↑j ...
+.text:00057B3C                 BNE.W           loc_57592
+.text:00057B40                 MOVW            R1, #0x8F4
+.text:00057B44                 LDR.W           R0, [R7,#var_28]
+.text:00057B48                 STR.W           R1, [R7,#var_60]
+.text:00057B4C                 MOV             R1, #0xB798D
+.text:00057B54                 LDR.W           R0, [R7,#var_70]
+.text:00057B58                 STR.W           R1, [R7,#var_64]
+.text:00057B5C                 LSLS            R1, R1, #0xC
+.text:00057B5E                 ADDW            R1, R1, #0x8F4
+.text:00057B62
+.text:00057B62 loc_57B62                               ; CODE XREF: AnoSDKIoctl_0+7C2↑j
+.text:00057B62                 STR.W           R1, [R7,#var_5C]
+.text:00057B66                 B               loc_5790E
+.text:00057B68 ; ---------------------------------------------------------------------------
+.text:00057B68
+.text:00057B68 loc_57B68                               ; CODE XREF: AnoSDKIoctl_0+262↑j
+.text:00057B68                                         ; AnoSDKIoctl_0+B24↓j
+.text:00057B68                 MOV             R1, #0xF25D82F2
+.text:00057B70                 CMP             R0, R1
+.text:00057B72                 BGE             loc_57C3A
+.text:00057B74
+.text:00057B74 loc_57B74                               ; CODE XREF: AnoSDKIoctl_0+8C0↓j
+.text:00057B74                 MOV             R1, #0xEF591FC2
+.text:00057B7C                 CMP             R0, R1
+.text:00057B7E                 BNE.W           loc_57592
+.text:00057B82
+.text:00057B82 loc_57B82                               ; CODE XREF: AnoSDKIoctl_0+194↑j
+.text:00057B82                 MOVS            R0, #6  ; size
+.text:00057B84                 BLX             malloc
+.text:00057B88                 STR.W           R0, [R7,#ptr]
+.text:00057B8C                 MOVS            R0, #0xA
+.text:00057B8E                 STR.W           R0, [R7,#var_60]
+.text:00057B92                 MOV             R0, #0x6E2A1E2
+.text:00057B9A                 MOVW            LR, #0x1E2A
+.text:00057B9E                 STR.W           R0, [R7,#var_64]
+.text:00057BA2                 MOVT            LR, #0x6E2A
+.text:00057BA6                 LDR.W           R0, [R7,#ptr]
+.text:00057BAA                 MOVW            R12, #0x7782
+.text:00057BAE                 MOVW            R5, #0x5FC6
+.text:00057BB2                 MOVW            R4, #0xFE62
+.text:00057BB6                 MOVW            R6, #0x391B
+.text:00057BBA                 MOVW            R3, #0xE72F
+.text:00057BBE                 MOVW            R2, #0x4CA0
+.text:00057BC2                 CMP             R0, #0
+.text:00057BC4                 MOV             R0, LR
+.text:00057BC6                 MOV.W           R1, #0
+.text:00057BCA                 ITT EQ
+.text:00057BCC                 MOVWEQ          R0, #0xA4A4
+.text:00057BD0                 MOVTEQ          R0, #0xA510
+.text:00057BD4                 MOVT            R12, #0x5AB2
+.text:00057BD8                 MOVT            R5, #0x43D0
+.text:00057BDC                 MOVT            R4, #0x2721
+.text:00057BE0                 MOVT            R6, #0xC3C
+.text:00057BE4                 MOVT            R3, #0x637
+.text:00057BE8                 MOVT            R2, #0x31C0
+.text:00057BEC                 STR.W           R1, [R7,#var_6C]
+.text:00057BF0                 STR.W           R0, [R7,#var_5C]
+.text:00057BF4                 B               loc_57592
+.text:00057BF6 ; ---------------------------------------------------------------------------
+.text:00057BF6
+.text:00057BF6 loc_57BF6                               ; CODE XREF: AnoSDKIoctl_0+FC6↓j
+.text:00057BF6                 MOVW            R1, #0x82F2
+.text:00057BFA                 MOVW            R2, #0x4CA0
+.text:00057BFE                 MOVW            R3, #0xE72F
+.text:00057C02                 MOVW            R6, #0x391B
+.text:00057C06                 MOVW            R4, #0xFE62
+.text:00057C0A                 MOVW            R5, #0x5FC6
+.text:00057C0E                 MOVW            R12, #0x7782
+.text:00057C12                 MOVW            LR, #0x1E2A
+.text:00057C16                 MOVT            R1, #0xF25D
+.text:00057C1A                 CMP             R0, R1
+.text:00057C1C                 MOVT            R2, #0x31C0
+.text:00057C20                 MOVT            R3, #0x637
+.text:00057C24                 MOVT            R6, #0xC3C
+.text:00057C28                 MOVT            R4, #0x2721
+.text:00057C2C                 MOVT            R5, #0x43D0
+.text:00057C30                 MOVT            R12, #0x5AB2
+.text:00057C34                 MOVT            LR, #0x6E2A
+.text:00057C38                 BLT             loc_57B74
+.text:00057C3A
+.text:00057C3A loc_57C3A                               ; CODE XREF: AnoSDKIoctl_0+184↑j
+.text:00057C3A                                         ; AnoSDKIoctl_0+7FA↑j
+.text:00057C3A                 BNE.W           loc_57592
+.text:00057C3E                 LDR.W           R1, [R7,#var_78]
+.text:00057C42                 MOV             R0, #0x7488369
+.text:00057C4A                 CMP             R1, #0x12
+.text:00057C4C                 MOVW            R1, #0x369C
+.text:00057C50                 STR.W           R0, [R7,#var_64]
+.text:00057C54                 MOVT            R1, #0x7488
+.text:00057C58                 MOV.W           R0, #0xC
+.text:00057C5C                 ITT EQ
+.text:00057C5E                 MOVWEQ          R1, #0xBE7D
+.text:00057C62                 MOVTEQ          R1, #0x81B9
+.text:00057C66
+.text:00057C66 loc_57C66                               ; CODE XREF: AnoSDKIoctl_0+4E8↑j
+.text:00057C66                                         ; AnoSDKIoctl_0+ACA↓j ...
+.text:00057C66                 STRD.W          R0, R1, [R7,#var_60]
+.text:00057C6A                 B               loc_57592
+.text:00057C6C ; ---------------------------------------------------------------------------
+.text:00057C6C
+.text:00057C6C loc_57C6C                               ; CODE XREF: AnoSDKIoctl_0+B30↓j
+.text:00057C6C                 MOVW            R1, #0x2BD0
+.text:00057C70                 MOVW            R2, #0x4CA0
+.text:00057C74                 MOVW            R3, #0xE72F
+.text:00057C78                 MOVW            R6, #0x391B
+.text:00057C7C                 MOVW            R4, #0xFE62
+.text:00057C80                 MOVW            R5, #0x5FC6
+.text:00057C84                 MOVW            R12, #0x7782
+.text:00057C88                 MOVW            LR, #0x1E2A
+.text:00057C8C                 MOVT            R1, #0xD9DA
+.text:00057C90                 CMP             R0, R1
+.text:00057C92                 MOVT            R2, #0x31C0
+.text:00057C96                 MOVT            R3, #0x637
+.text:00057C9A                 MOVT            R6, #0xC3C
+.text:00057C9E                 MOVT            R4, #0x2721
+.text:00057CA2                 MOVT            R5, #0x43D0
+.text:00057CA6                 MOVT            R12, #0x5AB2
+.text:00057CAA                 MOVT            LR, #0x6E2A
+.text:00057CAE                 BLT.W           loc_576D6
+.text:00057CB2
+.text:00057CB2 loc_57CB2                               ; CODE XREF: AnoSDKIoctl_0+35A↑j
+.text:00057CB2                 MOV             R1, #0xE07FA512
+.text:00057CBA                 CMP             R0, R1
+.text:00057CBC                 BGE             loc_57D76
+.text:00057CBE
+.text:00057CBE loc_57CBE                               ; CODE XREF: AnoSDKIoctl_0+9FC↓j
+.text:00057CBE                 MOV             R1, #0xD9DA2BD0
+.text:00057CC6                 CMP             R0, R1
+.text:00057CC8                 BNE.W           loc_57592
+.text:00057CCC
+.text:00057CCC loc_57CCC                               ; CODE XREF: AnoSDKIoctl_0+204↑j
+.text:00057CCC                 LDR.W           R0, [R7,#var_24] ; ptr
+.text:00057CD0                 BLX             free
+.text:00057CD4                 MOVW            R0, #0x680
+.text:00057CD8                 MOVW            LR, #0x1E2A
+.text:00057CDC                 MOVT            R0, #0xF8
+.text:00057CE0                 MOVW            R12, #0x7782
+.text:00057CE4                 STR.W           R0, [R7,#var_64]
+.text:00057CE8                 MOVS            R0, #9
+.text:00057CEA                 STR.W           R0, [R7,#var_60]
+.text:00057CEE                 MOV             R0, #0xF8068009
+.text:00057CF6                 MOVW            R5, #0x5FC6
+.text:00057CFA                 MOVW            R4, #0xFE62
+.text:00057CFE                 MOVW            R6, #0x391B
+.text:00057D02                 MOVW            R3, #0xE72F
+.text:00057D06                 MOVW            R2, #0x4CA0
+.text:00057D0A                 STR.W           R0, [R7,#var_5C]
+.text:00057D0E                 MOVS            R0, #0
+.text:00057D10                 MOVT            LR, #0x6E2A
+.text:00057D14                 MOVT            R12, #0x5AB2
+.text:00057D18                 MOVT            R5, #0x43D0
+.text:00057D1C                 MOVT            R4, #0x2721
+.text:00057D20                 MOVT            R6, #0xC3C
+.text:00057D24                 MOVT            R3, #0x637
+.text:00057D28                 MOVT            R2, #0x31C0
+.text:00057D2C                 STR.W           R0, [R7,#var_70]
+.text:00057D30                 B               loc_57592
+.text:00057D32 ; ---------------------------------------------------------------------------
+.text:00057D32
+.text:00057D32 loc_57D32                               ; CODE XREF: AnoSDKIoctl_0+11C4↓j
+.text:00057D32                 MOVW            R1, #0xA512
+.text:00057D36                 MOVW            R2, #0x4CA0
+.text:00057D3A                 MOVW            R3, #0xE72F
+.text:00057D3E                 MOVW            R6, #0x391B
+.text:00057D42                 MOVW            R4, #0xFE62
+.text:00057D46                 MOVW            R5, #0x5FC6
+.text:00057D4A                 MOVW            R12, #0x7782
+.text:00057D4E                 MOVW            LR, #0x1E2A
+.text:00057D52                 MOVT            R1, #0xE07F
+.text:00057D56                 CMP             R0, R1
+.text:00057D58                 MOVT            R2, #0x31C0
+.text:00057D5C                 MOVT            R3, #0x637
+.text:00057D60                 MOVT            R6, #0xC3C
+.text:00057D64                 MOVT            R4, #0x2721
+.text:00057D68                 MOVT            R5, #0x43D0
+.text:00057D6C                 MOVT            R12, #0x5AB2
+.text:00057D70                 MOVT            LR, #0x6E2A
+.text:00057D74                 BLT             loc_57CBE
+.text:00057D76
+.text:00057D76 loc_57D76                               ; CODE XREF: AnoSDKIoctl_0+1F4↑j
+.text:00057D76                                         ; AnoSDKIoctl_0+944↑j
+.text:00057D76                 BNE.W           loc_57592
+.text:00057D7A                 LDR.W           R1, [R7,#var_78]
+.text:00057D7E                 MOV             R0, #0x748836
+.text:00057D86                 CMP             R1, #0x2D ; '-'
+.text:00057D88                 MOVW            R1, #0x369C
+.text:00057D8C                 STR.W           R0, [R7,#var_64]
+.text:00057D90                 MOVT            R1, #0x7488
+.text:00057D94                 MOV.W           R0, #0x9C
+.text:00057D98                 ITT EQ
+.text:00057D9A                 MOVWEQ          R1, #0x9496
+.text:00057D9E                 MOVTEQ          R1, #0xC2D6
+.text:00057DA2                 STRD.W          R0, R1, [R7,#var_60]
+.text:00057DA6
+.text:00057DA6 loc_57DA6                               ; CODE XREF: AnoSDKIoctl_0+C68↓j
+.text:00057DA6                                         ; AnoSDKIoctl_0+FA6↓j
+.text:00057DA6                 LDR.W           R0, [R7,#var_5C]
+.text:00057DAA                 CMP             R0, R8
+.text:00057DAC                 BGE             loc_57E44
+.text:00057DAE                 CMP             R0, R10
+.text:00057DB0                 BGE             loc_57E9E
+.text:00057DB2                 MOVW            R3, #0xE72F
+.text:00057DB6                 MOVW            R4, #0xFE62
+.text:00057DBA                 MOVW            LR, #0x1E2A
+.text:00057DBE                 CMP             R0, R9
+.text:00057DC0                 MOVT            R3, #0x637
+.text:00057DC4                 MOVT            R4, #0x2721
+.text:00057DC8                 MOVT            LR, #0x6E2A
+.text:00057DCC                 BGE.W           loc_57F64
+.text:00057DD0                 MOVW            R1, #0xFD3
+.text:00057DD4                 MOVW            R2, #0x4CA0
+.text:00057DD8                 MOVW            R6, #0x391B
+.text:00057DDC                 MOVW            R5, #0x5FC6
+.text:00057DE0                 MOVW            R12, #0x7782
+.text:00057DE4                 MOVT            R1, #0x886C
+.text:00057DE8                 CMP             R0, R1
+.text:00057DEA                 MOVT            R2, #0x31C0
+.text:00057DEE                 MOVT            R6, #0xC3C
+.text:00057DF2                 MOVT            R5, #0x43D0
+.text:00057DF6                 MOVT            R12, #0x5AB2
+.text:00057DFA                 BLT.W           loc_575B0
+.text:00057DFE
+.text:00057DFE loc_57DFE                               ; CODE XREF: AnoSDKIoctl_0:loc_575AC↑j
+.text:00057DFE                 MOV             R1, #0x9072FC3F
+.text:00057E06                 CMP             R0, R1
+.text:00057E08                 BGE.W           loc_581E8
+.text:00057E0C
+.text:00057E0C loc_57E0C                               ; CODE XREF: AnoSDKIoctl_0+E6C↓j
+.text:00057E0C                 MOV             R1, #0x886C0FD3
+.text:00057E14                 CMP             R0, R1
+.text:00057E16                 BNE.W           loc_57592
+.text:00057E1A
+.text:00057E1A loc_57E1A                               ; CODE XREF: AnoSDKIoctl_0+176↑j
+.text:00057E1A                 LDR.W           R1, [R7,#var_78]
+.text:00057E1E                 MOV             R0, #0xE07FA
+.text:00057E26                 CMP             R1, #0x2D ; '-'
+.text:00057E28                 MOV             R1, #0xE07FA512
+.text:00057E30                 STR.W           R0, [R7,#var_64]
+.text:00057E34                 MOVW            R0, #0x512
+.text:00057E38                 ITT LT
+.text:00057E3A                 MOVWLT          R1, #0x82F2
+.text:00057E3E                 MOVTLT          R1, #0xF25D
+.text:00057E42                 B               loc_57C66
+.text:00057E44 ; ---------------------------------------------------------------------------
+.text:00057E44
+.text:00057E44 loc_57E44                               ; CODE XREF: AnoSDKIoctl_0+A34↑j
+.text:00057E44                 CMP             R0, R11
+.text:00057E46                 BGE             loc_57F1E
+.text:00057E48                 MOV             R1, #0xF709C47C
+.text:00057E50                 CMP             R0, R1
+.text:00057E52                 BGE.W           loc_57A0C
+.text:00057E56                 MOVW            R1, #0x1FC2
+.text:00057E5A                 MOVW            R2, #0x4CA0
+.text:00057E5E                 MOVW            R3, #0xE72F
+.text:00057E62                 MOVW            R6, #0x391B
+.text:00057E66                 MOVW            R4, #0xFE62
+.text:00057E6A                 MOVW            R5, #0x5FC6
+.text:00057E6E                 MOVW            R12, #0x7782
+.text:00057E72                 MOVW            LR, #0x1E2A
+.text:00057E76                 MOVT            R1, #0xEF59
+.text:00057E7A                 CMP             R0, R1
+.text:00057E7C                 MOVT            R2, #0x31C0
+.text:00057E80                 MOVT            R3, #0x637
+.text:00057E84                 MOVT            R6, #0xC3C
+.text:00057E88                 MOVT            R4, #0x2721
+.text:00057E8C                 MOVT            R5, #0x43D0
+.text:00057E90                 MOVT            R12, #0x5AB2
+.text:00057E94                 MOVT            LR, #0x6E2A
+.text:00057E98                 BLT.W           loc_575DE
+.text:00057E9C                 B               loc_57B68
+.text:00057E9E ; ---------------------------------------------------------------------------
+.text:00057E9E
+.text:00057E9E loc_57E9E                               ; CODE XREF: AnoSDKIoctl_0+A38↑j
+.text:00057E9E                 MOV             R1, #0xC47B76C3
+.text:00057EA6                 CMP             R0, R1
+.text:00057EA8                 BGE.W           loc_57C6C
+.text:00057EAC                 MOVW            R1, #0xD8F4
+.text:00057EB0                 MOVW            R2, #0x4CA0
+.text:00057EB4                 MOVW            R3, #0xE72F
+.text:00057EB8                 MOVW            R6, #0x391B
+.text:00057EBC                 MOVW            R4, #0xFE62
+.text:00057EC0                 MOVW            R5, #0x5FC6
+.text:00057EC4                 MOVW            R12, #0x7782
+.text:00057EC8                 MOVW            LR, #0x1E2A
+.text:00057ECC                 MOVT            R1, #0xB798
+.text:00057ED0                 CMP             R0, R1
+.text:00057ED2                 MOVT            R2, #0x31C0
+.text:00057ED6                 MOVT            R3, #0x637
+.text:00057EDA                 MOVT            R6, #0xC3C
+.text:00057EDE                 MOVT            R4, #0x2721
+.text:00057EE2                 MOVT            R5, #0x43D0
+.text:00057EE6                 MOVT            R12, #0x5AB2
+.text:00057EEA                 MOVT            LR, #0x6E2A
+.text:00057EEE                 BLT.W           loc_57600
+.text:00057EF2
+.text:00057EF2 loc_57EF2                               ; CODE XREF: AnoSDKIoctl_0+284↑j
+.text:00057EF2                 MOV             R1, #0xC2D69496
+.text:00057EFA                 CMP             R0, R1
+.text:00057EFC                 BGE.W           loc_5809A
+.text:00057F00
+.text:00057F00 loc_57F00                               ; CODE XREF: AnoSDKIoctl_0+D1E↓j
+.text:00057F00                 MOV             R1, #0xB798D8F4
+.text:00057F08                 CMP             R0, R1
+.text:00057F0A                 BNE.W           loc_57592
+.text:00057F0E
+.text:00057F0E loc_57F0E                               ; CODE XREF: AnoSDKIoctl_0+1B0↑j
+.text:00057F0E                 SUB.W           R4, R7, #-var_1C
+.text:00057F12                 LDR.W           R0, [R7,#var_74]
+.text:00057F16                 MOV             SP, R4
+.text:00057F18                 POP.W           {R8-R11}
+.text:00057F1C                 POP             {R4-R7,PC}
+.text:00057F1E ; ---------------------------------------------------------------------------
+.text:00057F1E
+.text:00057F1E loc_57F1E                               ; CODE XREF: AnoSDKIoctl_0+ACE↑j
+.text:00057F1E                 MOV             R5, #0x43D05FC6
+.text:00057F26                 CMP             R0, R5
+.text:00057F28                 BGE.W           loc_5786A
+.text:00057F2C                 MOVW            R4, #0xFE62
+.text:00057F30                 MOVW            R2, #0x4CA0
+.text:00057F34                 MOVW            R3, #0xE72F
+.text:00057F38                 MOVW            R6, #0x391B
+.text:00057F3C                 MOVW            R12, #0x7782
+.text:00057F40                 MOVW            LR, #0x1E2A
+.text:00057F44                 MOVT            R4, #0x2721
+.text:00057F48                 CMP             R0, R4
+.text:00057F4A                 MOVT            R2, #0x31C0
+.text:00057F4E                 MOVT            R3, #0x637
+.text:00057F52                 MOVT            R6, #0xC3C
+.text:00057F56                 MOVT            R12, #0x5AB2
+.text:00057F5A                 MOVT            LR, #0x6E2A
+.text:00057F5E                 BLT.W           loc_57614
+.text:00057F62                 B               loc_5797C
+.text:00057F64 ; ---------------------------------------------------------------------------
+.text:00057F64
+.text:00057F64 loc_57F64                               ; CODE XREF: AnoSDKIoctl_0+A54↑j
+.text:00057F64                 MOVW            R1, #0xDFAA
+.text:00057F68                 MOVW            R2, #0x4CA0
+.text:00057F6C                 MOVW            R6, #0x391B
+.text:00057F70                 MOVW            R5, #0x5FC6
+.text:00057F74                 MOVW            R12, #0x7782
+.text:00057F78                 MOVT            R1, #0x98F9
+.text:00057F7C                 CMP             R0, R1
+.text:00057F7E                 MOVT            R2, #0x31C0
+.text:00057F82                 MOVT            R6, #0xC3C
+.text:00057F86                 MOVT            R5, #0x43D0
+.text:00057F8A                 MOVT            R12, #0x5AB2
+.text:00057F8E                 BLT.W           loc_57628
+.text:00057F92
+.text:00057F92 loc_57F92                               ; CODE XREF: AnoSDKIoctl_0+2AC↑j
+.text:00057F92                 MOV             R1, #0xA510A4A4
+.text:00057F9A                 CMP             R0, R1
+.text:00057F9C                 BGE.W           loc_58186
+.text:00057FA0
+.text:00057FA0 loc_57FA0                               ; CODE XREF: AnoSDKIoctl_0+E0A↓j
+.text:00057FA0                 MOV             R1, #0x98F9DFAA
+.text:00057FA8                 CMP             R0, R1
+.text:00057FAA                 BNE.W           loc_57592
+.text:00057FAE
+.text:00057FAE loc_57FAE                               ; CODE XREF: AnoSDKIoctl_0+1DA↑j
+.text:00057FAE                 LDR.W           R0, [R7,#var_28]
+.text:00057FB2                 BL              sub_2BFFE6
+.text:00057FB6                 LDR.W           R1, [R7,#var_24]
+.text:00057FBA                 ADDS            R0, #1
+.text:00057FBC                 STRH            R0, [R1]
+.text:00057FBE                 MOVS            R0, #9
+.text:00057FC0                 STR.W           R0, [R7,#var_60]
+.text:00057FC4                 MOV             R0, #0xF806800
+.text:00057FCC                 STR.W           R0, [R7,#var_64]
+.text:00057FD0                 LSLS            R0, R0, #4
+.text:00057FD2                 LDR.W           R1, [R7,#var_24]
+.text:00057FD6                 ADDS            R0, #9
+.text:00057FD8                 STR.W           R0, [R7,#var_5C]
+.text:00057FDC                 STR.W           R1, [R7,#var_70]
+.text:00057FE0                 B               loc_57DA6
+.text:00057FE2 ; ---------------------------------------------------------------------------
+.text:00057FE2
+.text:00057FE2 loc_57FE2                               ; CODE XREF: AnoSDKIoctl_0+138↑j
+.text:00057FE2                                         ; AnoSDKIoctl_0+368↑j ...
+.text:00057FE2                 BNE.W           loc_57592
+.text:00057FE6                 LDR.W           R0, [R7,#var_40]
+.text:00057FEA                 BL              sub_2BFFE6
+.text:00057FEE                 LDR.W           R1, [R7,#var_3C]
+.text:00057FF2                 ADDS            R0, #1
+.text:00057FF4                 MOVW            LR, #0x1E2A
+.text:00057FF8                 MOVW            R12, #0x7782
+.text:00057FFC                 MOVW            R5, #0x5FC6
+.text:00058000                 MOVW            R4, #0xFE62
+.text:00058004                 STRH            R0, [R1]
+.text:00058006                 MOVS            R0, #0x1B
+.text:00058008                 STR.W           R0, [R7,#var_60]
+.text:0005800C                 MOV             R0, #0xC3C39
+.text:00058014                 MOVW            R6, #0x391B
+.text:00058018                 STR.W           R0, [R7,#var_64]
+.text:0005801C                 MOVW            R3, #0xE72F
+.text:00058020                 MOVW            R2, #0x4CA0
+.text:00058024                 LSLS            R0, R0, #8
+.text:00058026                 LDR.W           R1, [R7,#var_3C]
+.text:0005802A                 ADDS            R0, #0x1B
+.text:0005802C                 MOVT            LR, #0x6E2A
+.text:00058030                 MOVT            R12, #0x5AB2
+.text:00058034                 MOVT            R5, #0x43D0
+.text:00058038                 MOVT            R4, #0x2721
+.text:0005803C                 MOVT            R6, #0xC3C
+.text:00058040                 MOVT            R3, #0x637
+.text:00058044                 MOVT            R2, #0x31C0
+.text:00058048                 STR.W           R0, [R7,#var_5C]
+.text:0005804C                 STR.W           R1, [R7,#var_68]
+.text:00058050                 B.W             loc_57592
+.text:00058054 ; ---------------------------------------------------------------------------
+.text:00058054
+.text:00058054 loc_58054                               ; CODE XREF: AnoSDKIoctl_0+1050↓j
+.text:00058054                 MOVW            R1, #0x9496
+.text:00058058                 MOVW            R2, #0x4CA0
+.text:0005805C                 MOVW            R3, #0xE72F
+.text:00058060                 MOVW            R6, #0x391B
+.text:00058064                 MOVW            R4, #0xFE62
+.text:00058068                 MOVW            R5, #0x5FC6
+.text:0005806C                 MOVW            R12, #0x7782
+.text:00058070                 MOVW            LR, #0x1E2A
+.text:00058074                 MOVT            R1, #0xC2D6
+.text:00058078                 CMP             R0, R1
+.text:0005807A                 MOVT            R2, #0x31C0
+.text:0005807E                 MOVT            R3, #0x637
+.text:00058082                 MOVT            R6, #0xC3C
+.text:00058086                 MOVT            R4, #0x2721
+.text:0005808A                 MOVT            R5, #0x43D0
+.text:0005808E                 MOVT            R12, #0x5AB2
+.text:00058092                 MOVT            LR, #0x6E2A
+.text:00058096                 BLT.W           loc_57F00
+.text:0005809A
+.text:0005809A loc_5809A                               ; CODE XREF: AnoSDKIoctl_0+1A0↑j
+.text:0005809A                                         ; AnoSDKIoctl_0+B84↑j
+.text:0005809A                 BNE.W           loc_57592
+.text:0005809E                 SUB             SP, SP, #8
+.text:000580A0                 LDR.W           R1, [R7,#var_7C]
+.text:000580A4                 MOVS            R0, #0
+.text:000580A6                 STR             R0, [SP,#0x5E0+var_5E0]
+.text:000580A8                 MOVS            R0, #0x2D ; '-'
+.text:000580AA                 MOVS            R2, #0
+.text:000580AC                 MOVS            R3, #0
+.text:000580AE                 BL              AnoSDKIoctlOld_0
+.text:000580B2                 ADD             SP, SP, #8
+.text:000580B4                 LDR.W           R1, [R7,#var_48]
+.text:000580B8                 VMOV.I32        Q8, #0
+.text:000580BC                 STR.W           R1, [R7,#var_28]
+.text:000580C0                 LDR.W           R1, [R7,#var_28]
+.text:000580C4                 LDR.W           R1, [R7,#var_28]
+.text:000580C8                 STR.W           R0, [R7,#var_2C]
+.text:000580CC                 MOVS            R0, #6  ; size
+.text:000580CE                 VST1.8          {D16-D17}, [R1]
+.text:000580D2                 BLX             malloc
+.text:000580D6                 STR.W           R0, [R7,#var_24]
+.text:000580DA                 MOV             R0, #0x4930EC32
+.text:000580E2                 MOVW            LR, #0x1E2A
+.text:000580E6                 STR.W           R0, [R7,#var_60]
+.text:000580EA                 MOV             R0, #0xBE39284E
+.text:000580F2                 MOVW            R12, #0x7782
+.text:000580F6                 STR.W           R0, [R7,#var_64]
+.text:000580FA                 MOVS            R0, #0
+.text:000580FC                 STR.W           R0, [R7,#var_70]
+.text:00058100                 MOVW            R0, #0x6800
+.text:00058104                 LDR.W           R1, [R7,#var_24]
+.text:00058108                 MOVW            R5, #0x5FC6
+.text:0005810C                 MOVW            R4, #0xFE62
+.text:00058110                 MOVW            R6, #0x391B
+.text:00058114                 CMP             R1, #0
+.text:00058116                 MOVW            R1, #0xC47C
+.text:0005811A                 MOVW            R3, #0xE72F
+.text:0005811E                 MOVW            R2, #0x4CA0
+.text:00058122                 MOVT            R0, #0xF80
+.text:00058126                 MOVT            R1, #0xF709
+.text:0005812A                 MOV.W           R0, R0,LSL#4
+.text:0005812E                 IT EQ
+.text:00058130                 ADDEQ.W         R1, R0, #9
+.text:00058134                 MOVT            LR, #0x6E2A
+.text:00058138                 MOVT            R12, #0x5AB2
+.text:0005813C                 MOVT            R5, #0x43D0
+.text:00058140                 MOVT            R4, #0x2721
+.text:00058144                 MOVT            R6, #0xC3C
+.text:00058148                 MOVT            R3, #0x637
+.text:0005814C                 MOVT            R2, #0x31C0
+.text:00058150                 STR.W           R1, [R7,#var_5C]
+.text:00058154                 B.W             loc_57592
+.text:00058158 ; ---------------------------------------------------------------------------
+.text:00058158
+.text:00058158 loc_58158                               ; CODE XREF: AnoSDKIoctl_0+1114↓j
+.text:00058158                 MOVW            R1, #0xA4A4
+.text:0005815C                 MOVW            R2, #0x4CA0
+.text:00058160                 MOVW            R6, #0x391B
+.text:00058164                 MOVW            R5, #0x5FC6
+.text:00058168                 MOVW            R12, #0x7782
+.text:0005816C                 MOVT            R1, #0xA510
+.text:00058170                 CMP             R0, R1
+.text:00058172                 MOVT            R2, #0x31C0
+.text:00058176                 MOVT            R6, #0xC3C
+.text:0005817A                 MOVT            R5, #0x43D0
+.text:0005817E                 MOVT            R12, #0x5AB2
+.text:00058182                 BLT.W           loc_57FA0
+.text:00058186
+.text:00058186 loc_58186                               ; CODE XREF: AnoSDKIoctl_0+1CA↑j
+.text:00058186                                         ; AnoSDKIoctl_0+C24↑j
+.text:00058186                 BNE.W           loc_57592
+.text:0005818A                 MOV             R0, #0xB798D8F
+.text:00058192                 STR.W           R0, [R7,#var_64]
+.text:00058196                 LDR.W           R0, [R7,#var_34]
+.text:0005819A                 MOV             R0, #0xB798D8F4
+.text:000581A2                 STR.W           R0, [R7,#var_5C]
+.text:000581A6                 LDR.W           R0, [R7,#var_6C]
+.text:000581AA                 LDR.W           R1, [R7,#var_38]
+.text:000581AE                 MOVS            R1, #4
+.text:000581B0                 STR.W           R0, [R7,#var_74]
+.text:000581B4                 STR.W           R1, [R7,#var_60]
+.text:000581B8                 B               loc_58246
+.text:000581BA ; ---------------------------------------------------------------------------
+.text:000581BA
+.text:000581BA loc_581BA                               ; CODE XREF: AnoSDKIoctl_0+F04↓j
+.text:000581BA                 MOVW            R1, #0xFC3F
+.text:000581BE                 MOVW            R2, #0x4CA0
+.text:000581C2                 MOVW            R6, #0x391B
+.text:000581C6                 MOVW            R5, #0x5FC6
+.text:000581CA                 MOVW            R12, #0x7782
+.text:000581CE                 MOVT            R1, #0x9072
+.text:000581D2                 CMP             R0, R1
+.text:000581D4                 MOVT            R2, #0x31C0
+.text:000581D8                 MOVT            R6, #0xC3C
+.text:000581DC                 MOVT            R5, #0x43D0
+.text:000581E0                 MOVT            R12, #0x5AB2
+.text:000581E4                 BLT.W           loc_57E0C
+.text:000581E8
+.text:000581E8 loc_581E8                               ; CODE XREF: AnoSDKIoctl_0+166↑j
+.text:000581E8                                         ; AnoSDKIoctl_0+A90↑j
+.text:000581E8                 BNE.W           loc_57592
+.text:000581EC                 LDR.W           R0, [R7,#var_3C]
+.text:000581F0                 MOVS            R1, #0
+.text:000581F2                 STRH            R1, [R0,#4]
+.text:000581F4                 STR             R1, [R0]
+.text:000581F6                 LDR.W           R2, [R7,#var_44]
+.text:000581FA                 SUB             SP, SP, #8
+.text:000581FC                 STR             R1, [SP,#0x5E0+var_5E0]
+.text:000581FE                 MOVS            R0, #0xA
+.text:00058200                 LDR.W           R1, [R7,#var_7C]
+.text:00058204                 MOVS            R3, #0x40 ; '@'
+.text:00058206                 BL              AnoSDKIoctlOld_0
+.text:0005820A                 ADD             SP, SP, #8
+.text:0005820C                 MOV             R6, R0
+.text:0005820E                 LDR.W           R0, [R7,#var_40]
+.text:00058212                 LDR             R2, =(aRetvalD - 0x5821C) ; "retval=%d"
+.text:00058214                 MOVS            R1, #0xFF
+.text:00058216                 MOV             R3, R6
+.text:00058218                 ADD             R2, PC  ; "retval=%d"
+.text:0005821A                 BL              sub_2C0918
+.text:0005821E                 MOVW            R0, #0x7B76
+.text:00058222                 MOVS            R1, #0xC3
+.text:00058224                 MOVT            R0, #0xC4
+.text:00058228                 CMP             R6, #1
+.text:0005822A                 MOV             R2, R0
+.text:0005822C                 MOV.W           R0, R0,LSL#8
+.text:00058230                 ADD.W           R0, R0, #0xC3
+.text:00058234                 ITT EQ
+.text:00058236                 MOVWEQ          R0, #0xB28E
+.text:0005823A                 MOVTEQ          R0, #0xEA92
+.text:0005823E                 STRD.W          R2, R1, [R7,#var_64]
+.text:00058242
+.text:00058242 loc_58242                               ; CODE XREF: AnoSDKIoctl_0+75C↑j
+.text:00058242                                         ; AnoSDKIoctl_0+1036↓j
+.text:00058242                 STR.W           R0, [R7,#var_5C]
+.text:00058246
+.text:00058246 loc_58246                               ; CODE XREF: AnoSDKIoctl_0+4EE↑j
+.text:00058246                                         ; AnoSDKIoctl_0+E40↑j
+.text:00058246                 LDR.W           R0, [R7,#var_5C]
+.text:0005824A                 CMP             R0, R8
+.text:0005824C                 BGE             loc_58320
+.text:0005824E                 CMP             R0, R10
+.text:00058250                 BGE.W           loc_583B0
+.text:00058254                 MOVW            R3, #0xE72F
+.text:00058258                 MOVW            R4, #0xFE62
+.text:0005825C                 MOVW            LR, #0x1E2A
+.text:00058260                 CMP             R0, R9
+.text:00058262                 MOVT            R3, #0x637
+.text:00058266                 MOVT            R4, #0x2721
+.text:0005826A                 MOVT            LR, #0x6E2A
+.text:0005826E                 BGE.W           loc_58482
+.text:00058272                 MOV             R1, #0x886C0FD3
+.text:0005827A                 CMP             R0, R1
+.text:0005827C                 BGE             loc_581BA
+.text:0005827E                 MOVW            R1, #0xBE7D
+.text:00058282                 MOVW            R2, #0x4CA0
+.text:00058286                 MOVW            R6, #0x391B
+.text:0005828A                 MOVW            R5, #0x5FC6
+.text:0005828E                 MOVW            R12, #0x7782
+.text:00058292                 MOVT            R1, #0x81B9
+.text:00058296                 CMP             R0, R1
+.text:00058298                 MOVT            R2, #0x31C0
+.text:0005829C                 MOVT            R6, #0xC3C
+.text:000582A0                 MOVT            R5, #0x43D0
+.text:000582A4                 MOVT            R12, #0x5AB2
+.text:000582A8                 BNE.W           loc_57592
+.text:000582AC
+.text:000582AC loc_582AC                               ; CODE XREF: AnoSDKIoctl_0+90↑j
+.text:000582AC                                         ; AnoSDKIoctl_0+244↑j
+.text:000582AC                 LDR.W           R0, [R7,#var_50]
+.text:000582B0                 MOV.W           R1, #0x400
+.text:000582B4                 STR.W           R0, [R7,#var_38]
+.text:000582B8                 LDR.W           R0, [R7,#var_38]
+.text:000582BC                 LDR.W           R0, [R7,#var_38]
+.text:000582C0                 BLX             __aeabi_memclr
+.text:000582C4                 LDR.W           R0, [R7,#var_4C]
+.text:000582C8                 MOVS            R1, #0
+.text:000582CA                 STR.W           R0, [R7,#var_34]
+.text:000582CE                 LDR.W           R0, [R7,#var_34]
+.text:000582D2                 LDR.W           R0, [R7,#var_4C]
+.text:000582D6                 STR             R1, [R0]
+.text:000582D8                 LDR.W           R0, [R7,#var_4C]
+.text:000582DC                 LDR.W           R2, [R7,#var_38]
+.text:000582E0                 SUB             SP, SP, #8
+.text:000582E2                 LDR.W           R1, [R7,#var_7C]
+.text:000582E6                 MOV.W           R3, #0x400
+.text:000582EA                 STR             R0, [SP,#0x5E0+var_5E0]
+.text:000582EC                 MOVS            R0, #0x12
+.text:000582EE                 BL              AnoSDKIoctlOld_0
+.text:000582F2                 ADD             SP, SP, #8
+.text:000582F4                 MOVW            R1, #0x890E
+.text:000582F8                 CMP             R0, #0
+.text:000582FA                 MOV             R0, R10
+.text:000582FC                 MOVT            R1, #0x1229
+.text:00058300                 ITT EQ
+.text:00058302                 MOVWEQ          R0, #0x1FC2
+.text:00058306                 MOVTEQ          R0, #0xEF59
+.text:0005830A                 STR.W           R1, [R7,#var_60]
+.text:0005830E                 MOVW            R1, #0xC874
+.text:00058312                 STR.W           R0, [R7,#var_5C]
+.text:00058316                 MOVT            R1, #0xB9F7
+.text:0005831A                 STR.W           R1, [R7,#var_64]
+.text:0005831E                 B               loc_57DA6
+.text:00058320 ; ---------------------------------------------------------------------------
+.text:00058320
+.text:00058320 loc_58320                               ; CODE XREF: AnoSDKIoctl_0+ED4↑j
+.text:00058320                 CMP             R0, R11
+.text:00058322                 BGE.W           loc_58434
+.text:00058326                 MOV             R1, #0xF709C47C
+.text:0005832E                 CMP             R0, R1
+.text:00058330                 BGE.W           loc_584E2
+.text:00058334                 MOV             R1, #0xEF591FC2
+.text:0005833C                 CMP             R0, R1
+.text:0005833E                 BGE.W           loc_57BF6
+.text:00058342                 MOVW            R2, #0x4CA0
+.text:00058346                 MOVW            R3, #0xE72F
+.text:0005834A                 MOVW            R6, #0x391B
+.text:0005834E                 MOVW            R4, #0xFE62
+.text:00058352                 MOVW            R5, #0x5FC6
+.text:00058356                 MOVW            R12, #0x7782
+.text:0005835A                 MOVW            LR, #0x1E2A
+.text:0005835E                 CMP             R0, R8
+.text:00058360                 MOVT            R2, #0x31C0
+.text:00058364                 MOVT            R3, #0x637
+.text:00058368                 MOVT            R6, #0xC3C
+.text:0005836C                 MOVT            R4, #0x2721
+.text:00058370                 MOVT            R5, #0x43D0
+.text:00058374                 MOVT            R12, #0x5AB2
+.text:00058378                 MOVT            LR, #0x6E2A
+.text:0005837C                 BNE.W           loc_57592
+.text:00058380
+.text:00058380 loc_58380                               ; CODE XREF: AnoSDKIoctl_0+B6↑j
+.text:00058380                                         ; AnoSDKIoctl_0+26A↑j
+.text:00058380                 LDR             R1, =(aEmulatorName - 0x5838A) ; "|emulator_name="
+.text:00058382                 LDR.W           R0, [R7,#var_40]
+.text:00058386                 ADD             R1, PC  ; "|emulator_name="
+.text:00058388                 BL              sub_2C0074
+.text:0005838C                 LDR.W           R1, [R7,#var_44]
+.text:00058390                 LDR.W           R0, [R7,#var_40]
+.text:00058394                 BL              sub_2C0074
+.text:00058398                 MOVS            R0, #0xC3
+.text:0005839A                 STR.W           R0, [R7,#var_60]
+.text:0005839E                 MOV             R0, #0xC47B76
+.text:000583A6                 STR.W           R0, [R7,#var_64]
+.text:000583AA                 LSLS            R0, R0, #8
+.text:000583AC                 ADDS            R0, #0xC3
+.text:000583AE                 B               loc_58242
+.text:000583B0 ; ---------------------------------------------------------------------------
+.text:000583B0
+.text:000583B0 loc_583B0                               ; CODE XREF: AnoSDKIoctl_0+ED8↑j
+.text:000583B0                 MOV             R1, #0xC47B76C3
+.text:000583B8                 CMP             R0, R1
+.text:000583BA                 BGE.W           loc_58532
+.text:000583BE                 MOV             R1, #0xB798D8F4
+.text:000583C6                 CMP             R0, R1
+.text:000583C8                 BGE.W           loc_58054
+.text:000583CC                 MOVW            R2, #0x4CA0
+.text:000583D0                 MOVW            R3, #0xE72F
+.text:000583D4                 MOVW            R6, #0x391B
+.text:000583D8                 MOVW            R4, #0xFE62
+.text:000583DC                 MOVW            R5, #0x5FC6
+.text:000583E0                 MOVW            R12, #0x7782
+.text:000583E4                 MOVW            LR, #0x1E2A
+.text:000583E8                 CMP             R0, R10
+.text:000583EA                 MOVT            R2, #0x31C0
+.text:000583EE                 MOVT            R3, #0x637
+.text:000583F2                 MOVT            R6, #0xC3C
+.text:000583F6                 MOVT            R4, #0x2721
+.text:000583FA                 MOVT            R5, #0x43D0
+.text:000583FE                 MOVT            R12, #0x5AB2
+.text:00058402                 MOVT            LR, #0x6E2A
+.text:00058406                 BNE.W           loc_57592
+.text:0005840A
+.text:0005840A loc_5840A                               ; CODE XREF: AnoSDKIoctl_0+D8↑j
+.text:0005840A                                         ; AnoSDKIoctl_0+28C↑j
+.text:0005840A                 MOV             R0, #0xB798D8
+.text:00058412                 STR.W           R0, [R7,#var_64]
+.text:00058416                 MOV             R0, #0xB798D8F4
+.text:0005841E                 STR.W           R0, [R7,#var_5C]
+.text:00058422                 LDR.W           R0, [R7,#var_34]
+.text:00058426                 MOVS            R0, #0xF4
+.text:00058428                 STR.W           R0, [R7,#var_60]
+.text:0005842C                 LDR.W           R0, [R7,#var_38]
+.text:00058430                 B.W             loc_5790C
+.text:00058434 ; ---------------------------------------------------------------------------
+.text:00058434
+.text:00058434 loc_58434                               ; CODE XREF: AnoSDKIoctl_0+FAA↑j
+.text:00058434                 MOV             R5, #0x43D05FC6
+.text:0005843C                 CMP             R0, R5
+.text:0005843E                 BGE.W           loc_58588
+.text:00058442                 MOV             R4, #0x2721FE62
+.text:0005844A                 CMP             R0, R4
+.text:0005844C                 BLT.W           loc_5780A
+.text:00058450                 MOVW            R2, #0x4CA0
+.text:00058454                 MOVW            R3, #0xE72F
+.text:00058458                 MOVW            R6, #0x391B
+.text:0005845C                 MOVW            R12, #0x7782
+.text:00058460                 MOVW            LR, #0x1E2A
+.text:00058464                 MOVT            R2, #0x31C0
+.text:00058468                 CMP             R0, R2
+.text:0005846A                 MOVT            R3, #0x637
+.text:0005846E                 MOVT            R6, #0xC3C
+.text:00058472                 MOVT            R12, #0x5AB2
+.text:00058476                 MOVT            LR, #0x6E2A
+.text:0005847A                 BLT.W           loc_57980
+.text:0005847E                 B.W             loc_579BA
+.text:00058482 ; ---------------------------------------------------------------------------
+.text:00058482
+.text:00058482 loc_58482                               ; CODE XREF: AnoSDKIoctl_0+EF6↑j
+.text:00058482                 MOV             R1, #0x98F9DFAA
+.text:0005848A                 CMP             R0, R1
+.text:0005848C                 BGE.W           loc_58158
+.text:00058490                 MOVW            R2, #0x4CA0
+.text:00058494                 MOVW            R6, #0x391B
+.text:00058498                 MOVW            R5, #0x5FC6
+.text:0005849C                 MOVW            R12, #0x7782
+.text:000584A0                 CMP             R0, R9
+.text:000584A2                 MOVT            R2, #0x31C0
+.text:000584A6                 MOVT            R6, #0xC3C
+.text:000584AA                 MOVT            R5, #0x43D0
+.text:000584AE                 MOVT            R12, #0x5AB2
+.text:000584B2                 BNE.W           loc_57592
+.text:000584B6
+.text:000584B6 loc_584B6                               ; CODE XREF: AnoSDKIoctl_0+FE↑j
+.text:000584B6                                         ; AnoSDKIoctl_0+2B4↑j
+.text:000584B6                 LDR.W           R1, [R7,#var_78]
+.text:000584BA                 MOV             R0, #0x74883
+.text:000584C2                 CMP             R1, #0xA
+.text:000584C4                 MOV             R1, #0x7488369C
+.text:000584CC                 STR.W           R0, [R7,#var_64]
+.text:000584D0                 MOVW            R0, #0x69C
+.text:000584D4                 ITT EQ
+.text:000584D6                 MOVWEQ          R1, #0xE72F
+.text:000584DA                 MOVTEQ          R1, #0x637
+.text:000584DE                 B.W             loc_57C66
+.text:000584E2 ; ---------------------------------------------------------------------------
+.text:000584E2
+.text:000584E2 loc_584E2                               ; CODE XREF: AnoSDKIoctl_0+FB8↑j
+.text:000584E2                 MOV             R3, #0x637E72F
+.text:000584EA                 CMP             R0, R3
+.text:000584EC                 BGE.W           loc_57AD6
+.text:000584F0                 MOVW            R1, #0x8009
+.text:000584F4                 MOVW            R2, #0x4CA0
+.text:000584F8                 MOVW            R6, #0x391B
+.text:000584FC                 MOVW            R4, #0xFE62
+.text:00058500                 MOVW            R5, #0x5FC6
+.text:00058504                 MOVW            R12, #0x7782
+.text:00058508                 MOVW            LR, #0x1E2A
+.text:0005850C                 MOVT            R1, #0xF806
+.text:00058510                 CMP             R0, R1
+.text:00058512                 MOVT            R2, #0x31C0
+.text:00058516                 MOVT            R6, #0xC3C
+.text:0005851A                 MOVT            R4, #0x2721
+.text:0005851E                 MOVT            R5, #0x43D0
+.text:00058522                 MOVT            R12, #0x5AB2
+.text:00058526                 MOVT            LR, #0x6E2A
+.text:0005852A                 BLT.W           loc_57644
+.text:0005852E                 B.W             loc_57B3C
+.text:00058532 ; ---------------------------------------------------------------------------
+.text:00058532
+.text:00058532 loc_58532                               ; CODE XREF: AnoSDKIoctl_0+1042↑j
+.text:00058532                 MOV             R1, #0xD9DA2BD0
+.text:0005853A                 CMP             R0, R1
+.text:0005853C                 BGE.W           loc_57D32
+.text:00058540                 MOVW            R1, #0x380
+.text:00058544                 MOVW            R2, #0x4CA0
+.text:00058548                 MOVW            R3, #0xE72F
+.text:0005854C                 MOVW            R6, #0x391B
+.text:00058550                 MOVW            R4, #0xFE62
+.text:00058554                 MOVW            R5, #0x5FC6
+.text:00058558                 MOVW            R12, #0x7782
+.text:0005855C                 MOVW            LR, #0x1E2A
+.text:00058560                 MOVT            R1, #0xD2E3
+.text:00058564                 CMP             R0, R1
+.text:00058566                 MOVT            R2, #0x31C0
+.text:0005856A                 MOVT            R3, #0x637
+.text:0005856E                 MOVT            R6, #0xC3C
+.text:00058572                 MOVT            R4, #0x2721
+.text:00058576                 MOVT            R5, #0x43D0
+.text:0005857A                 MOVT            R12, #0x5AB2
+.text:0005857E                 MOVT            LR, #0x6E2A
+.text:00058582                 BLT.W           loc_576E4
+.text:00058586                 B               loc_57FE2
+.text:00058588 ; ---------------------------------------------------------------------------
+.text:00058588
+.text:00058588 loc_58588                               ; CODE XREF: AnoSDKIoctl_0+10C6↑j
+.text:00058588                 MOV             LR, #0x6E2A1E2A
+.text:00058590                 CMP             R0, LR
+.text:00058592                 BGE.W           loc_578B4
+.text:00058596                 MOVW            R12, #0x7782
+.text:0005859A                 MOVW            R2, #0x4CA0
+.text:0005859E                 MOVW            R3, #0xE72F
+.text:000585A2                 MOVW            R6, #0x391B
+.text:000585A6                 MOVW            R4, #0xFE62
+.text:000585AA                 MOVT            R12, #0x5AB2
+.text:000585AE                 CMP             R0, R12
+.text:000585B0                 MOVT            R2, #0x31C0
+.text:000585B4                 MOVT            R3, #0x637
+.text:000585B8                 MOVT            R6, #0xC3C
+.text:000585BC                 MOVT            R4, #0x2721
+.text:000585C0                 BLT.W           loc_57764
+.text:000585C4                 B.W             loc_57914
+.text:000585C4 ; End of function AnoSDKIoctl_0
 
 
 
